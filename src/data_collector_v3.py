@@ -7,22 +7,137 @@ from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 
 # Configuration
-# Base URL template. Categories: 'sme' or 'ipo' (Mainboard)
-BASE_API_URL = "https://webnodejs.investorgain.com/cloud/report/data-read/331/{page}/11/2025/2025-26/0/{category}?search=&v=23-18"
+# Dynamic URL generation based on date
+# Format: .../331/{day}/{month}/{year}/{financial_year}/0/all...
+BASE_API_URL_TEMPLATE = "https://webnodejs.investorgain.com/cloud/report/data-read/331/{day}/{month}/{year}/{fy}/0/all?search=&v=09-18"
 DATA_DIR = "data"
 MASTER_CSV_PATH = os.path.join(DATA_DIR, "master_ipo_v3.csv")
+GMP_HISTORY_CSV_PATH = os.path.join(DATA_DIR, "gmp_history.csv")
 
-def fetch_data(category, page):
-    """Fetches data from the API for a specific category and page."""
-    url = BASE_API_URL.format(category=category, page=page)
+# ... (keep existing functions) ...
+
+def save_history(new_df):
+    """Appends current data to history file with 4-hour duplicate check."""
+    # Prepare history dataframe
+    history_cols = ['Name', 'GMP', 'Sub', 'Nifty_Trend_7D', 'India_VIX_Close']
+    
+    # Ensure columns exist
+    for col in history_cols:
+        if col not in new_df.columns:
+            new_df[col] = None
+            
+    current_history = new_df[history_cols].copy()
+    current_history['Date_Time'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    current_history.rename(columns={'Name': 'IPO_Name', 'Nifty_Trend_7D': 'Nifty_Trend', 'India_VIX_Close': 'VIX'}, inplace=True)
+    
+    if os.path.exists(GMP_HISTORY_CSV_PATH):
+        try:
+            existing_history = pd.read_csv(GMP_HISTORY_CSV_PATH)
+            existing_history['Date_Time'] = pd.to_datetime(existing_history['Date_Time'])
+            
+            # Filter out rows added in the last 4 hours for the same IPO
+            four_hours_ago = datetime.now() - timedelta(hours=4)
+            
+            rows_to_add = []
+            for _, row in current_history.iterrows():
+                ipo_name = row['IPO_Name']
+                
+                # Check if this IPO was updated recently
+                recent_entries = existing_history[
+                    (existing_history['IPO_Name'] == ipo_name) & 
+                    (existing_history['Date_Time'] > four_hours_ago)
+                ]
+                
+                if recent_entries.empty:
+                    rows_to_add.append(row)
+            
+            if rows_to_add:
+                new_history_df = pd.DataFrame(rows_to_add)
+                # Append to file (header=False because file exists)
+                new_history_df.to_csv(GMP_HISTORY_CSV_PATH, mode='a', header=False, index=False)
+                print(f"Appended {len(new_history_df)} rows to history.")
+            else:
+                print("No new history to add (all updated within last 4 hours).")
+                
+        except Exception as e:
+            print(f"Error updating history: {e}")
+            # Fallback: just append everything if read fails? Or maybe create new?
+            # Safer to create new if it's corrupted, but let's try to append
+            current_history.to_csv(GMP_HISTORY_CSV_PATH, mode='a', header=False, index=False)
+    else:
+        current_history.to_csv(GMP_HISTORY_CSV_PATH, index=False)
+        print(f"Created new history file with {len(current_history)} rows.")
+
+def collect_and_save():
+    print(f"Fetching IPO data (SME + Mainboard) for Today...")
+    
+    # Single fetch for today's data
+    all_data = fetch_data()
+            
+    print(f"\nTotal records fetched: {len(all_data)}")
+    
+    if not all_data:
+        print("No data found for today. Exiting.")
+        return
+
+    processed_rows = []
+    for i, row in enumerate(all_data):
+        print(f"Processing {i+1}/{len(all_data)}...", end='\r')
+        processed_rows.append(process_row(row))
+    print("\nProcessing complete.")
+        
+    new_df = pd.DataFrame(processed_rows)
+    
+    os.makedirs(DATA_DIR, exist_ok=True)
+    
+    # Save History
+    save_history(new_df)
+    
+    # Self-Healing Merge Logic
+    if os.path.exists(MASTER_CSV_PATH):
+        try:
+            print("Loading existing dataset for self-healing...")
+            master_df = pd.read_csv(MASTER_CSV_PATH)
+            
+            # 1. Clean Old Data (Regex Transformation)
+            master_df['Name'] = master_df['Name'].astype(str).apply(
+                lambda x: re.sub(r'(?:BSE|NSE)\s*SME.*', '', x).strip()
+            )
+            
+            # 2. Deduplicate Old Data
+            before_dedup = len(master_df)
+            master_df = master_df.drop_duplicates(subset=['Name'], keep='last')
+            print(f"Cleaned and deduplicated existing data. Rows: {before_dedup} -> {len(master_df)}")
+            
+            # 3. Create Dictionary for Upsert
+            master_dict = {row['Name']: row for _, row in master_df.iterrows()}
+            
+            # 4. Upsert New Data
+            for _, row in new_df.iterrows():
+                master_dict[row['Name']] = row
+                
+            final_df = pd.DataFrame(list(master_dict.values()))
+            
+        except Exception as e:
+            print(f"Error reading/processing master csv: {e}. Overwriting with new data.")
+            final_df = new_df
+    else:
+        final_df = new_df
+        
+    final_df.to_csv(MASTER_CSV_PATH, index=False)
+    print(f"Saved {len(final_df)} records to {MASTER_CSV_PATH}")
+    
+    # Trigger Training
+    print("Triggering Training...")
     try:
-        response = requests.get(url)
-        response.raise_for_status()
-        data = response.json()
-        return data.get("reportTableData", [])
+        import sys
+        sys.path.append(os.getcwd())
+        from src.train_model import train_and_predict # Updated import
+        train_and_predict()
     except Exception as e:
-        print(f"Error fetching data for {category} page {page}: {e}")
-        return []
+        print(f"Could not import train_model: {e}")
+        os.system("python3 src/train_model.py")
+
 
 # ... (keep other helper functions like clean_html, parse_name, etc. as they are) ...
 # I will use multi_replace to target specific blocks if I can't replace the whole file easily, 
@@ -36,6 +151,35 @@ def fetch_data(category, page):
 
 # Let's overwrite the whole file with the new logic.
 
+def get_financial_year(date_obj):
+    """Calculates Indian Financial Year (e.g., 2025-26)."""
+    if date_obj.month >= 4:
+        start_year = date_obj.year
+        end_year = (date_obj.year + 1) % 100
+    else:
+        start_year = date_obj.year - 1
+        end_year = date_obj.year % 100
+    return f"{start_year}-{end_year}"
+
+def fetch_data():
+    """Fetches data from the API for the current date."""
+    now = datetime.now()
+    day = now.day
+    month = now.month
+    year = now.year
+    fy = get_financial_year(now)
+    
+    url = BASE_API_URL_TEMPLATE.format(day=day, month=month, year=year, fy=fy)
+    print(f"Fetching data from: {url}")
+    
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        data = response.json()
+        return data.get("reportTableData", [])
+    except Exception as e:
+        print(f"Error fetching data: {e}")
+        return []
 
 def clean_html(raw_html):
     """Removes HTML tags and decodes entities."""
@@ -235,13 +379,36 @@ def process_row(row):
     except:
         ipo_size = 0.0
 
+    # Extract Issue Price (Price Band)
+    # Format can be "100" or "100-120". We take the upper band (120) as Issue Price.
+    raw_price = clean_html(row.get("Price", ""))
+    issue_price = 0.0
+    if raw_price and raw_price != '-':
+        try:
+            # If range "100-120", take 120
+            if '-' in raw_price:
+                parts = raw_price.split('-')
+                issue_price = float(re.sub(r'[^\d\.]', '', parts[-1]))
+            else:
+                issue_price = float(re.sub(r'[^\d\.]', '', raw_price))
+        except:
+            issue_price = 0.0
+
+    # 9. Status Logic
+    if listing_price is not None and listing_price > 0:
+        status = "Listed"
+    else:
+        status = "Upcoming"
+
     return {
         "Name": name,
+        "Status": status,
         "Has_Anchor": has_anchor,
         "GMP": gmp,
         "GMP_High": gmp_high,
         "Sub": sub,
         "IPO_Size": ipo_size,
+        "Issue_Price": issue_price,
         "Listing_Date": listing_date,
         "Listing_Price": listing_price,
         "Nifty_Trend_7D": nifty_trend,
@@ -249,25 +416,17 @@ def process_row(row):
     }
 
 def collect_and_save():
-    all_data = []
-    categories = ['sme', 'ipo'] # SME and Mainboard
+    print(f"Fetching IPO data (SME + Mainboard) for Today...")
     
-    for category in categories:
-        page = 1
-        print(f"Fetching {category.upper()} data...")
-        while True:
-            print(f"  Fetching page {page}...", end='\r')
-            page_data = fetch_data(category, page)
-            
-            if not page_data:
-                print(f"\n  No more data for {category} at page {page}. Moving to next category.")
-                break
-                
-            all_data.extend(page_data)
-            page += 1
+    # Single fetch for today's data
+    all_data = fetch_data()
             
     print(f"\nTotal records fetched: {len(all_data)}")
     
+    if not all_data:
+        print("No data found for today. Exiting.")
+        return
+
     processed_rows = []
     for i, row in enumerate(all_data):
         print(f"Processing {i+1}/{len(all_data)}...", end='\r')
@@ -277,6 +436,9 @@ def collect_and_save():
     new_df = pd.DataFrame(processed_rows)
     
     os.makedirs(DATA_DIR, exist_ok=True)
+    
+    # Save History
+    save_history(new_df)
     
     # Self-Healing Merge Logic
     if os.path.exists(MASTER_CSV_PATH):
@@ -314,14 +476,11 @@ def collect_and_save():
     
     # Trigger Training
     print("Triggering Training...")
-    try:
-        import sys
-        sys.path.append(os.getcwd())
-        from src.train_v3 import train_model
-        train_model()
-    except Exception as e:
-        print(f"Could not import train_model: {e}")
-        os.system("python3 src/train_v3.py")
+    exit_code = os.system("python3 src/train_model.py")
+    if exit_code != 0:
+        print("Training script failed or returned error.")
+    else:
+        print("Training completed successfully.")
 
 if __name__ == "__main__":
     collect_and_save()
