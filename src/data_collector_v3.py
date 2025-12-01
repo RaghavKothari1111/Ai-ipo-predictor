@@ -342,12 +342,14 @@ def process_row(row):
     raw_anchor = row.get("Anchor", "")
     raw_listing = row.get("~Str_Listing", "") or row.get("Listing", "")
     
-    # 2. Extract Listing Price BEFORE Name Normalization
+    # 2. Extract Listing Price (Target Variable)
+    # Source: Regex search in Name for L@...
+    # Logic: If found -> Listed (Training Data). If NOT -> Upcoming (Prediction Data).
     name_clean_for_extraction = clean_html(raw_name)
     match = re.search(r'L@([\d\.]+)', name_clean_for_extraction)
     listing_price = float(match.group(1)) if match else None
     
-    # 3. Name Normalization (Fix 1)
+    # 3. Name Normalization
     name = parse_name(raw_name)
     
     # 4. Anchor
@@ -379,8 +381,9 @@ def process_row(row):
     except:
         ipo_size = 0.0
 
-    # Extract Issue Price (Price Band)
-    # Format can be "100" or "100-120". We take the upper band (120) as Issue Price.
+    # 9. Extract Issue Price (Input Variable)
+    # Source: "Price" field.
+    # Logic: Base Price. Exists for both Listed and Upcoming.
     raw_price = clean_html(row.get("Price", ""))
     issue_price = 0.0
     if raw_price and raw_price != '-':

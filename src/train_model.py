@@ -173,19 +173,24 @@ def train_and_predict():
                 print(f"  [Guardrail Triggered] {name}: Pred {pred_price:.2f} < Issue {issue_price} but GMP {gmp} > 0. Clamping.")
                 pred_price = issue_price + gmp
             
-            print(f"[{name}] Issue: {issue_price} | GMP: {gmp} -> Pred Gain: {pred_gain:.1f}% -> Price: ₹{pred_price:.2f}")
+            # Requested Output Format: Name, Issue_Price, Predicted_Gain_Percent, Predicted_Final_Price
+            print(f"[{name}] Issue: {issue_price} | Pred Gain: {pred_gain:.1f}% -> Final Price: ₹{pred_price:.2f}")
             
             results.append({
                 'Name': name,
                 'Issue_Price': issue_price,
-                'Current_GMP': gmp,
                 'Predicted_Gain_Percent': pred_gain,
-                'Predicted_Listing_Price': pred_price,
+                'Predicted_Final_Price': pred_price,
+                'Current_GMP': gmp, # Keeping GMP for reference
                 'Prediction_Date': pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')
             })
             
         # Save Predictions
         pred_df = pd.DataFrame(results)
+        # Reorder columns as requested
+        cols = ['Name', 'Issue_Price', 'Predicted_Gain_Percent', 'Predicted_Final_Price', 'Current_GMP', 'Prediction_Date']
+        pred_df = pred_df[cols]
+        
         pred_df.to_csv(PREDICTIONS_CSV_PATH, index=False)
         print(f"Predictions saved to {PREDICTIONS_CSV_PATH}")
     else:
