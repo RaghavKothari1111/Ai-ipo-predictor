@@ -34,6 +34,7 @@ jobs:
         run: |
           git config --global user.name "Automated Scraper"
           git config --global user.email "actions@github.com"
-          git add data/master_ipo_v3.csv data/gmp_history.csv data/latest_predictions.csv models/*.pkl
+          git add data/master_ipo_v3.csv data/gmp_history.csv data/latest_predictions.csv
+          git add models/ || true
           git commit -m "Auto-update data" || exit 0
           git push

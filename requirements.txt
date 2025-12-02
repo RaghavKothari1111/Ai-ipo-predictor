@@ -4,3 +4,4 @@ beautifulsoup4
 yfinance
 lxml
 scikit-learn
+numpy
