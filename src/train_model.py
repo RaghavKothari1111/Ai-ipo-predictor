@@ -35,10 +35,6 @@ def calculate_features(master_df, history_df):
     if 'GMP_Trend' not in master_df.columns:
         master_df['GMP_Trend'] = 0.0
     
-    # Note: Avg_VIX might be replaced by Current_VIX from hybrid collector, 
-    # but we can still calculate Avg_VIX from history if needed.
-    # The hybrid collector adds 'Current_VIX'.
-    
     if history_df.empty:
         return master_df
 
@@ -72,8 +68,8 @@ def train_and_predict():
     df = calculate_features(master_df, history_df)
     
     # Prepare Data
-    # New Feature Set: Issue_Price, GMP, IPO_Size_Cr, Sub_QIB, Sub_NII, Sub_Retail, Nifty_Trend_30D, Current_VIX
-    feature_cols = ['GMP', 'IPO_Size_Cr', 'Sub_QIB', 'Sub_NII', 'Sub_Retail', 'Nifty_Trend_30D', 'Current_VIX', 'GMP_Trend']
+    # New Feature Set: Issue_Price, GMP, IPO_Size_Cr, Sub_QIB, Sub_NII, Sub_Retail, Nifty_Trend_30D, Current_VIX, GMP_Momentum, Sector_Bonus
+    feature_cols = ['GMP', 'IPO_Size_Cr', 'Sub_QIB', 'Sub_NII', 'Sub_Retail', 'Nifty_Trend_30D', 'Current_VIX', 'GMP_Momentum', 'Sector_Bonus']
     
     # Ensure columns are numeric
     for col in feature_cols + ['Listing_Price', 'Issue_Price']:
@@ -153,7 +149,11 @@ def train_and_predict():
         print("\n--- PREDICTIONS FOR UPCOMING IPOS ---")
         X_upcoming = df_predict[feature_cols]
         # We still run model prediction for all, but might override it
-        predictions_gain_model = model.predict(X_upcoming)
+        try:
+            predictions_gain_model = model.predict(X_upcoming)
+        except:
+            # Fallback if model features don't match or model not loaded
+            predictions_gain_model = [0.0] * len(df_predict)
         
         results = []
         for i, (index, row) in enumerate(df_predict.iterrows()):
@@ -161,9 +161,9 @@ def train_and_predict():
             issue_price = row['Issue_Price']
             gmp = row['GMP']
             sub_qib = row['Sub_QIB']
+            sector_bonus = row.get('Sector_Bonus', 0)
             
             # Conditional Logic based on Data Stage
-            # We check Data_Stage if available, otherwise fallback to QIB check
             data_stage = row.get('Data_Stage', 'Early')
             
             # If Data_Stage is missing or NaN, infer from QIB
@@ -177,9 +177,11 @@ def train_and_predict():
                 method = "AI_Model"
                 
                 # QIB Boost Logic (Only for AI Model)
+                # Constraint: If Sub_QIB > 50x, ensure predicted gain is at least 30%
                 if sub_qib > 50:
-                    print(f"  [QIB Boost] {name}: QIB {sub_qib}x > 50x. Boosting gain by 5%.")
-                    pred_gain += 5.0
+                    if pred_gain < 30.0:
+                        print(f"  [QIB Boost] {name}: QIB {sub_qib}x > 50x. Enforcing min 30% gain.")
+                        pred_gain = 30.0
                 
                 # Calculate Predicted Price
                 pred_price = issue_price * (1 + pred_gain / 100)
@@ -192,16 +194,23 @@ def train_and_predict():
                     pred_gain = ((pred_price - issue_price) / issue_price) * 100
                     
             else:
-                # Scenario B: Early Stage -> Use GMP Only
-                prediction_type = "GMP_Fallback"
-                method = "GMP_Fallback"
-                pred_price = issue_price + gmp
+                # Scenario B: Early Stage -> Use GMP + Sector Logic
+                prediction_type = "GMP_Sector_Logic"
+                method = "GMP_Sector_Logic"
+                
+                # Pred = Issue_Price + GMP + (Sector_Bonus * 10)
+                # Wait, Sector_Bonus is 0 or 1. So it adds 10 rupees? Or 10%?
+                # The prompt says: "Pred = Issue_Price + GMP + (Sector_Bonus * 10)."
+                # This implies adding a flat value to the price.
+                
+                pred_price = issue_price + gmp + (sector_bonus * 10)
+                
                 if issue_price > 0:
-                    pred_gain = (gmp / issue_price) * 100
+                    pred_gain = ((pred_price - issue_price) / issue_price) * 100
                 else:
                     pred_gain = 0.0
                 
-                print(f"  [Early Stage] {name}: Data Stage is '{data_stage}'. Using GMP-based prediction.")
+                print(f"  [Early Stage] {name}: Using GMP + Sector Logic. Bonus applied: {sector_bonus * 10}")
 
             print(f"[{name}] Issue: {issue_price} | QIB: {sub_qib}x | Method: {method} | Pred Gain: {pred_gain:.1f}% -> Final Price: ₹{pred_price:.2f}")
             

@@ -2,7 +2,7 @@ name: Daily IPO Scraper
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # Run every 4 hours
+    - cron: '0 */2 * * *' # Run every 2 hours
   workflow_dispatch: # Allow manual trigger
 
 jobs:
@@ -28,7 +28,7 @@ jobs:
       - name: Run Data Collector
         env:
           TZ: 'Asia/Kolkata'
-        run: python src/hybrid_collector.py
+        run: python src/hybrid_collector_v4.py
 
       - name: Commit and Push changes
         run: |
