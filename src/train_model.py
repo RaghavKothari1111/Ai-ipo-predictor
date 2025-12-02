@@ -152,7 +152,8 @@ def train_and_predict():
     if not df_predict.empty:
         print("\n--- PREDICTIONS FOR UPCOMING IPOS ---")
         X_upcoming = df_predict[feature_cols]
-        predictions_gain = model.predict(X_upcoming)
+        # We still run model prediction for all, but might override it
+        predictions_gain_model = model.predict(X_upcoming)
         
         results = []
         for i, (index, row) in enumerate(df_predict.iterrows()):
@@ -161,25 +162,39 @@ def train_and_predict():
             gmp = row['GMP']
             sub_qib = row['Sub_QIB']
             
-            pred_gain = predictions_gain[i]
-            
-            # QIB Boost Logic
-            # If Sub_QIB > 50x, boost prediction by 10% (relative) or add 5% absolute?
-            # Prompt says: "If Sub_QIB is > 50x, the model should be allowed to predict higher gains (boost prediction)."
-            # Let's add a 5% absolute gain boost for now as a heuristic.
-            if sub_qib > 50:
-                print(f"  [QIB Boost] {name}: QIB {sub_qib}x > 50x. Boosting gain by 5%.")
-                pred_gain += 5.0
-            
-            # Calculate Predicted Price
-            pred_price = issue_price * (1 + pred_gain / 100)
-            
-            # Guardrail: GMP Floor
-            if pred_price < issue_price and gmp > 0:
-                print(f"  [Guardrail Triggered] {name}: Pred {pred_price:.2f} < Issue {issue_price} but GMP {gmp} > 0. Clamping.")
+            # Conditional Logic
+            if sub_qib > 0:
+                # Scenario A: Subscription Data Exists -> Use AI Model
+                pred_gain = predictions_gain_model[i]
+                prediction_type = "AI_Model"
+                
+                # QIB Boost Logic (Only for AI Model)
+                if sub_qib > 50:
+                    print(f"  [QIB Boost] {name}: QIB {sub_qib}x > 50x. Boosting gain by 5%.")
+                    pred_gain += 5.0
+                
+                # Calculate Predicted Price
+                pred_price = issue_price * (1 + pred_gain / 100)
+                
+                # Guardrail: GMP Floor (Safety Check)
+                if pred_price < issue_price and gmp > 0:
+                    print(f"  [Guardrail Triggered] {name}: Pred {pred_price:.2f} < Issue {issue_price} but GMP {gmp} > 0. Clamping.")
+                    pred_price = issue_price + gmp
+                    # Recalculate gain based on clamped price
+                    pred_gain = ((pred_price - issue_price) / issue_price) * 100
+                    
+            else:
+                # Scenario B: Early Stage (Sub_QIB == 0) -> Use GMP Only
+                prediction_type = "GMP_Based"
                 pred_price = issue_price + gmp
-            
-            print(f"[{name}] Issue: {issue_price} | QIB: {sub_qib}x | Pred Gain: {pred_gain:.1f}% -> Final Price: ₹{pred_price:.2f}")
+                if issue_price > 0:
+                    pred_gain = (gmp / issue_price) * 100
+                else:
+                    pred_gain = 0.0
+                
+                print(f"  [Early Stage] {name}: QIB is 0. Using GMP-based prediction.")
+
+            print(f"[{name}] Issue: {issue_price} | QIB: {sub_qib}x | Type: {prediction_type} | Pred Gain: {pred_gain:.1f}% -> Final Price: ₹{pred_price:.2f}")
             
             results.append({
                 'Name': name,
@@ -188,12 +203,13 @@ def train_and_predict():
                 'Predicted_Final_Price': pred_price,
                 'Current_GMP': gmp,
                 'Sub_QIB': sub_qib,
+                'Prediction_Type': prediction_type,
                 'Prediction_Date': pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')
             })
             
         # Save Predictions
         pred_df = pd.DataFrame(results)
-        cols = ['Name', 'Issue_Price', 'Predicted_Gain_Percent', 'Predicted_Final_Price', 'Current_GMP', 'Sub_QIB', 'Prediction_Date']
+        cols = ['Name', 'Issue_Price', 'Predicted_Gain_Percent', 'Predicted_Final_Price', 'Current_GMP', 'Sub_QIB', 'Prediction_Type', 'Prediction_Date']
         pred_df = pred_df[cols]
         
         pred_df.to_csv(PREDICTIONS_CSV_PATH, index=False)
