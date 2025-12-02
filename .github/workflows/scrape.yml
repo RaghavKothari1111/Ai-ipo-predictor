@@ -28,7 +28,7 @@ jobs:
       - name: Run Data Collector
         env:
           TZ: 'Asia/Kolkata'
-        run: python src/data_collector_v3.py
+        run: python src/hybrid_collector.py
 
       - name: Commit and Push changes
         run: |

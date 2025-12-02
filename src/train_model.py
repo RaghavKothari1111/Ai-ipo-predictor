@@ -31,9 +31,13 @@ def load_data():
 def calculate_features(master_df, history_df):
     """Calculates advanced features like GMP Trend and Avg VIX."""
     
-    # Initialize new features
-    master_df['GMP_Trend'] = 0.0
-    master_df['Avg_VIX'] = 12.0 # Default
+    # Initialize new features if not present
+    if 'GMP_Trend' not in master_df.columns:
+        master_df['GMP_Trend'] = 0.0
+    
+    # Note: Avg_VIX might be replaced by Current_VIX from hybrid collector, 
+    # but we can still calculate Avg_VIX from history if needed.
+    # The hybrid collector adds 'Current_VIX'.
     
     if history_df.empty:
         return master_df
@@ -53,18 +57,10 @@ def calculate_features(master_df, history_df):
             except:
                 master_df.at[index, 'GMP_Trend'] = 0.0
                 
-            # Avg VIX
-            try:
-                avg_vix = ipo_history['VIX'].mean()
-                if pd.notnull(avg_vix):
-                    master_df.at[index, 'Avg_VIX'] = avg_vix
-            except:
-                pass
-                
     return master_df
 
 def train_and_predict():
-    print("Starting Continuous Learning Loop (Gain % Prediction)...")
+    print("Starting Continuous Learning Loop (Hybrid Data)...")
     
     master_df, history_df = load_data()
     if master_df is None or master_df.empty:
@@ -76,12 +72,14 @@ def train_and_predict():
     df = calculate_features(master_df, history_df)
     
     # Prepare Data
-    feature_cols = ['GMP', 'Sub', 'Nifty_Trend_7D', 'GMP_Trend', 'Avg_VIX']
+    # New Feature Set: Issue_Price, GMP, IPO_Size_Cr, Sub_QIB, Sub_NII, Sub_Retail, Nifty_Trend_30D, Current_VIX
+    feature_cols = ['GMP', 'IPO_Size_Cr', 'Sub_QIB', 'Sub_NII', 'Sub_Retail', 'Nifty_Trend_30D', 'Current_VIX', 'GMP_Trend']
     
     # Ensure columns are numeric
     for col in feature_cols + ['Listing_Price', 'Issue_Price']:
-        if col in df.columns:
-            df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0.0)
+        if col not in df.columns:
+            df[col] = 0.0
+        df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0.0)
             
     # Calculate Target: Listing Gain Percent
     # Formula: ((Listing_Price - Issue_Price) / Issue_Price) * 100
@@ -159,36 +157,43 @@ def train_and_predict():
         results = []
         for i, (index, row) in enumerate(df_predict.iterrows()):
             name = row['Name']
-            gmp = row['GMP']
             issue_price = row['Issue_Price']
+            gmp = row['GMP']
+            sub_qib = row['Sub_QIB']
+            
             pred_gain = predictions_gain[i]
+            
+            # QIB Boost Logic
+            # If Sub_QIB > 50x, boost prediction by 10% (relative) or add 5% absolute?
+            # Prompt says: "If Sub_QIB is > 50x, the model should be allowed to predict higher gains (boost prediction)."
+            # Let's add a 5% absolute gain boost for now as a heuristic.
+            if sub_qib > 50:
+                print(f"  [QIB Boost] {name}: QIB {sub_qib}x > 50x. Boosting gain by 5%.")
+                pred_gain += 5.0
             
             # Calculate Predicted Price
             pred_price = issue_price * (1 + pred_gain / 100)
             
             # Guardrail: GMP Floor
-            # If Predicted Price < Issue Price (Negative Gain) BUT GMP is Positive
-            # Trust GMP -> Floor = Issue Price + GMP
             if pred_price < issue_price and gmp > 0:
                 print(f"  [Guardrail Triggered] {name}: Pred {pred_price:.2f} < Issue {issue_price} but GMP {gmp} > 0. Clamping.")
                 pred_price = issue_price + gmp
             
-            # Requested Output Format: Name, Issue_Price, Predicted_Gain_Percent, Predicted_Final_Price
-            print(f"[{name}] Issue: {issue_price} | Pred Gain: {pred_gain:.1f}% -> Final Price: ₹{pred_price:.2f}")
+            print(f"[{name}] Issue: {issue_price} | QIB: {sub_qib}x | Pred Gain: {pred_gain:.1f}% -> Final Price: ₹{pred_price:.2f}")
             
             results.append({
                 'Name': name,
                 'Issue_Price': issue_price,
                 'Predicted_Gain_Percent': pred_gain,
                 'Predicted_Final_Price': pred_price,
-                'Current_GMP': gmp, # Keeping GMP for reference
+                'Current_GMP': gmp,
+                'Sub_QIB': sub_qib,
                 'Prediction_Date': pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')
             })
             
         # Save Predictions
         pred_df = pd.DataFrame(results)
-        # Reorder columns as requested
-        cols = ['Name', 'Issue_Price', 'Predicted_Gain_Percent', 'Predicted_Final_Price', 'Current_GMP', 'Prediction_Date']
+        cols = ['Name', 'Issue_Price', 'Predicted_Gain_Percent', 'Predicted_Final_Price', 'Current_GMP', 'Sub_QIB', 'Prediction_Date']
         pred_df = pred_df[cols]
         
         pred_df.to_csv(PREDICTIONS_CSV_PATH, index=False)
