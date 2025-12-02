@@ -14,7 +14,8 @@ GMP_HISTORY_CSV_PATH = os.path.join(DATA_DIR, "gmp_history.csv")
 
 # API Templates
 INVESTORGAIN_URL_TEMPLATE = "https://webnodejs.investorgain.com/cloud/report/data-read/331/{day}/{month}/{year}/{fy}/0/all?search=&v=09-18"
-CHITTORGARH_URL_TEMPLATE = "https://webnodejs.chittorgarh.com/cloud/report/data-read/22/{day}/{month}/{year}/{fy}/0/0/0?search=&v=08-39"
+CHITTORGARH_SME_URL_TEMPLATE = "https://webnodejs.chittorgarh.com/cloud/report/data-read/22/{day}/{month}/{year}/{fy}/0/0/0?search=&v=08-39"
+CHITTORGARH_MAIN_URL_TEMPLATE = "https://webnodejs.chittorgarh.com/cloud/report/data-read/21/{day}/{month}/{year}/{fy}/0/0/0?search=&v=11-25"
 
 def get_financial_year(date_obj):
     """Calculates Indian Financial Year (e.g., 2025-26)."""
@@ -175,12 +176,12 @@ def process_chittorgarh(data):
     """Process Source 2 (Fundamental) Data."""
     processed = []
     for row in data:
-        raw_name = row.get("Name", "")
+        raw_name = row.get("Company Name", "")
         name = parse_name(raw_name)
         
         # Issue Size
         try:
-            size_str = clean_html(row.get("Issue Size", "")).replace(',', '')
+            size_str = clean_html(row.get("Total Issue Amount (Incl.Firm reservations) (Rs.cr.)", "")).replace(',', '')
             issue_size_cr = float(re.search(r'([\d\.]+)', size_str).group(1)) if re.search(r'([\d\.]+)', size_str) else 0.0
         except:
             issue_size_cr = 0.0
@@ -188,21 +189,29 @@ def process_chittorgarh(data):
         # Subscriptions
         def parse_sub(key):
             try:
-                val = clean_html(row.get(key, "")).replace('x', '').replace(',', '')
+                val = clean_html(row.get(key, ""))
+                # Handle Tilde (~) and Dash (-) for delayed data
+                if '~' in val or '-' in val:
+                    return 0.0
+                val = val.replace('x', '').replace(',', '')
                 return float(val)
             except:
                 return 0.0
         
-        sub_qib = parse_sub("QIB")
-        sub_nii = parse_sub("NII")
-        sub_retail = parse_sub("Retail")
+        sub_qib = parse_sub("QIB (x)")
+        sub_nii = parse_sub("NII (x)")
+        sub_retail = parse_sub("Retail (x)")
+        
+        # Data Stage Logic
+        data_stage = "Mature" if sub_qib > 0 else "Early"
         
         processed.append({
             "Name": name,
             "IPO_Size_Cr": issue_size_cr,
             "Sub_QIB": sub_qib,
             "Sub_NII": sub_nii,
-            "Sub_Retail": sub_retail
+            "Sub_Retail": sub_retail,
+            "Data_Stage": data_stage
         })
     return pd.DataFrame(processed)
 
@@ -213,25 +222,78 @@ def main():
     print("\n--- Fetching Source 1: Investorgain (Hype) ---")
     data_hype = fetch_json(INVESTORGAIN_URL_TEMPLATE)
     df_hype = process_investorgain(data_hype)
-    print(f"Fetched {len(df_hype)} records from Investorgain.")
+    print(f"Fetched {len(df_hype)} records from Investorgain (Master Trigger).")
     
     print("\n--- Fetching Source 2: Chittorgarh (Fundamentals) ---")
-    data_fund = fetch_json(CHITTORGARH_URL_TEMPLATE)
-    df_fund = process_chittorgarh(data_fund)
-    print(f"Fetched {len(df_fund)} records from Chittorgarh.")
+    # Fetch SME
+    print("Fetching SME Data...")
+    data_sme = fetch_json(CHITTORGARH_SME_URL_TEMPLATE)
+    df_sme = process_chittorgarh(data_sme)
+    df_sme['Source_Type'] = 'SME'
+    print(f"Fetched {len(df_sme)} SME records.")
+    
+    # Fetch Mainboard
+    print("Fetching Mainboard Data...")
+    data_main = fetch_json(CHITTORGARH_MAIN_URL_TEMPLATE)
+    df_main = process_chittorgarh(data_main)
+    df_main['Source_Type'] = 'Mainboard'
+    print(f"Fetched {len(df_main)} Mainboard records.")
+    
+    # Combine and Deduplicate
+    df_fund = pd.concat([df_sme, df_main], ignore_index=True)
+    df_fund = df_fund.drop_duplicates(subset=['Name'], keep='last')
+    print(f"Total Fundamental Records: {len(df_fund)}")
     
     # 2. Smart Merge
     print("\n--- Merging Datasets ---")
-    # Left join on Name (Hype is primary because it has GMP and Status)
-    merged_df = pd.merge(df_hype, df_fund, on="Name", how="left")
     
-    # Fill NaN for missing fundamental data
-    cols_to_fill = ['IPO_Size_Cr', 'Sub_QIB', 'Sub_NII', 'Sub_Retail']
-    for col in cols_to_fill:
-        if col in merged_df.columns:
-            merged_df[col] = merged_df[col].fillna(0.0)
-            
+    import difflib
+    
+    # Convert fund df to dict for lookup
+    fund_records = df_fund.to_dict('records')
+    fund_dict = {row['Name']: row for row in fund_records}
+    fund_names = list(fund_dict.keys())
+    
+    merged_rows = []
+    
+    matched_mainboard = 0
+    matched_sme = 0
+    
+    for _, hype_row in df_hype.iterrows():
+        hype_name = hype_row['Name']
+        
+        # Try exact match
+        if hype_name in fund_dict:
+            fund_data = fund_dict[hype_name]
+        else:
+            # Try fuzzy match
+            matches = difflib.get_close_matches(hype_name, fund_names, n=1, cutoff=0.5)
+            if matches:
+                fund_data = fund_dict[matches[0]]
+            else:
+                fund_data = {} # No fundamental data found
+        
+        # Track Source
+        if fund_data:
+            source_type = fund_data.get('Source_Type', 'Unknown')
+            if source_type == 'Mainboard':
+                matched_mainboard += 1
+            elif source_type == 'SME':
+                matched_sme += 1
+
+        # Combine data
+        combined = hype_row.to_dict()
+        combined['IPO_Size_Cr'] = fund_data.get('IPO_Size_Cr', 0.0)
+        combined['Sub_QIB'] = fund_data.get('Sub_QIB', 0.0)
+        combined['Sub_NII'] = fund_data.get('Sub_NII', 0.0)
+        combined['Sub_Retail'] = fund_data.get('Sub_Retail', 0.0)
+        combined['Data_Stage'] = fund_data.get('Data_Stage', 'Early') # Default to Early if missing
+        
+        merged_rows.append(combined)
+        
+    merged_df = pd.DataFrame(merged_rows)
     print(f"Merged Data Shape: {merged_df.shape}")
+    print(f"Enrichment Report: Matched QIB data for {matched_mainboard} Mainboard and {matched_sme} SME IPOs.")
     
     # 3. Market Sentiment
     print("\n--- Fetching Market Sentiment ---")
@@ -257,34 +319,59 @@ def main():
             )
             
             # Ensure new columns exist in master_df
-            new_cols = ['IPO_Size_Cr', 'Sub_QIB', 'Sub_NII', 'Sub_Retail', 'Nifty_Trend_30D', 'Current_VIX']
+            new_cols = ['IPO_Size_Cr', 'Sub_QIB', 'Sub_NII', 'Sub_Retail', 'Nifty_Trend_30D', 'Current_VIX', 'Data_Stage']
             for col in new_cols:
                 if col not in master_df.columns:
-                    master_df[col] = 0.0
+                    if col == 'Data_Stage':
+                        master_df[col] = 'Early'
+                    else:
+                        master_df[col] = 0.0
             
-            # Create dict for upsert
-            master_dict = {row['Name']: row for _, row in master_df.iterrows()}
+            # Create dict for upsert (Name -> Row Dict)
+            master_dict = master_df.set_index('Name').to_dict('index')
+            
+            # Add Name back to the row dicts because set_index moves it to index
+            for name, row_data in master_dict.items():
+                row_data['Name'] = name
+            
+            # Create Fund Dict for Fuzzy Matching
+            # We need to match merged_df names (which come from Investorgain/Hype) 
+            
+            # We need to fix the merge step, not the upsert step.
+            pass
             
             # Upsert new data
             for _, row in merged_df.iterrows():
-                # We update the row. New columns will be added.
-                # If row exists, update it. If not, add it.
-                # Note: This overwrites existing data for that IPO with new data.
-                # This is correct for "latest status".
-                
                 # Convert row to dict
                 row_dict = row.to_dict()
+                name = row['Name']
                 
-                if row['Name'] in master_dict:
-                    # Update existing
-                    master_dict[row['Name']].update(row_dict)
+                if name in master_dict:
+                    # Update existing, but PRESERVE fundamental data if new data is 0.0
+                    existing_row = master_dict[name]
+                    
+                    # List of columns to preserve if new value is 0.0 but old value exists
+                    preserve_cols = ['IPO_Size_Cr', 'Sub_QIB', 'Sub_NII', 'Sub_Retail']
+                    
+                    for col in preserve_cols:
+                        new_val = float(row_dict.get(col, 0.0))
+                        old_val = float(existing_row.get(col, 0.0))
+                        
+                        if new_val == 0.0 and old_val > 0.0:
+                            # Keep old value
+                            row_dict[col] = old_val
+                            # print(f"  [Preserving Data] {name}: Keeping {col}={old_val} (New is 0.0)")
+                            
+                    master_dict[name].update(row_dict)
                 else:
                     # Add new
-                    master_dict[row['Name']] = row_dict
+                    master_dict[name] = row_dict
             
             final_df = pd.DataFrame(list(master_dict.values()))
             
         except Exception as e:
+            import traceback
+            traceback.print_exc()
             print(f"Error reading master csv: {e}. Overwriting.")
             final_df = merged_df
     else:

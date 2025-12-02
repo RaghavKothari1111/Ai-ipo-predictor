@@ -162,11 +162,19 @@ def train_and_predict():
             gmp = row['GMP']
             sub_qib = row['Sub_QIB']
             
-            # Conditional Logic
-            if sub_qib > 0:
-                # Scenario A: Subscription Data Exists -> Use AI Model
+            # Conditional Logic based on Data Stage
+            # We check Data_Stage if available, otherwise fallback to QIB check
+            data_stage = row.get('Data_Stage', 'Early')
+            
+            # If Data_Stage is missing or NaN, infer from QIB
+            if pd.isna(data_stage) or data_stage == 0:
+                data_stage = "Mature" if sub_qib > 0 else "Early"
+            
+            if data_stage == "Mature" or sub_qib > 0:
+                # Scenario A: Mature Data -> Use AI Model
                 pred_gain = predictions_gain_model[i]
                 prediction_type = "AI_Model"
+                method = "AI_Model"
                 
                 # QIB Boost Logic (Only for AI Model)
                 if sub_qib > 50:
@@ -184,17 +192,18 @@ def train_and_predict():
                     pred_gain = ((pred_price - issue_price) / issue_price) * 100
                     
             else:
-                # Scenario B: Early Stage (Sub_QIB == 0) -> Use GMP Only
-                prediction_type = "GMP_Based"
+                # Scenario B: Early Stage -> Use GMP Only
+                prediction_type = "GMP_Fallback"
+                method = "GMP_Fallback"
                 pred_price = issue_price + gmp
                 if issue_price > 0:
                     pred_gain = (gmp / issue_price) * 100
                 else:
                     pred_gain = 0.0
                 
-                print(f"  [Early Stage] {name}: QIB is 0. Using GMP-based prediction.")
+                print(f"  [Early Stage] {name}: Data Stage is '{data_stage}'. Using GMP-based prediction.")
 
-            print(f"[{name}] Issue: {issue_price} | QIB: {sub_qib}x | Type: {prediction_type} | Pred Gain: {pred_gain:.1f}% -> Final Price: ₹{pred_price:.2f}")
+            print(f"[{name}] Issue: {issue_price} | QIB: {sub_qib}x | Method: {method} | Pred Gain: {pred_gain:.1f}% -> Final Price: ₹{pred_price:.2f}")
             
             results.append({
                 'Name': name,
@@ -203,13 +212,13 @@ def train_and_predict():
                 'Predicted_Final_Price': pred_price,
                 'Current_GMP': gmp,
                 'Sub_QIB': sub_qib,
-                'Prediction_Type': prediction_type,
+                'Method': method,
                 'Prediction_Date': pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')
             })
             
         # Save Predictions
         pred_df = pd.DataFrame(results)
-        cols = ['Name', 'Issue_Price', 'Predicted_Gain_Percent', 'Predicted_Final_Price', 'Current_GMP', 'Sub_QIB', 'Prediction_Type', 'Prediction_Date']
+        cols = ['Name', 'Issue_Price', 'Predicted_Gain_Percent', 'Predicted_Final_Price', 'Current_GMP', 'Sub_QIB', 'Method', 'Prediction_Date']
         pred_df = pred_df[cols]
         
         pred_df.to_csv(PREDICTIONS_CSV_PATH, index=False)
