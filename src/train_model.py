@@ -93,6 +93,19 @@ def train_and_predict():
         df['Status'] = df['Listing_Price'].apply(lambda x: 'Listed' if x > 0 else 'Upcoming')
         
     df_train = df[df['Status'] == 'Listed'].copy()
+    
+    # --- DATA QUALITY FILTER ---
+    # Filter out rows with missing critical data (Issue_Price <= 0 or Sub_QIB <= 0)
+    # We don't want to train on incomplete records.
+    initial_count = len(df_train)
+    df_train = df_train[
+        (df_train['Issue_Price'] > 0) & 
+        (df_train['Sub_QIB'] > 0)
+    ]
+    dropped_count = initial_count - len(df_train)
+    if dropped_count > 0:
+        print(f"⚠️ Data Quality Check: Dropped {dropped_count} listed IPOs due to missing data (Price/QIB).")
+        
     df_predict = df[df['Status'] == 'Upcoming'].copy()
     
     print(f"Training Data: {len(df_train)} rows. Prediction Data: {len(df_predict)} rows.")
