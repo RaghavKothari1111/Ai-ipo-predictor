@@ -424,6 +424,12 @@ def main():
                             row_dict['Current_VIX'] = old_vix
                             row_dict['Nifty_Trend_30D'] = existing_row.get('Nifty_Trend_30D', 0.0)
                             # print(f"  [Preserving History] {name}: Keeping VIX={old_vix}")
+                        
+                        # 3. Preserve Status if new is Upcoming (prevent regression)
+                        if row_dict.get('Status') == 'Upcoming':
+                            row_dict['Status'] = 'Listed'
+                            row_dict['Listing_Price'] = existing_row.get('Listing_Price', 0.0)
+                            row_dict['Listing_Date'] = existing_row.get('Listing_Date', None)
                             
                     master_dict[name].update(row_dict)
                 else:

@@ -100,7 +100,7 @@ def train_and_predict():
     target_col = 'Listing_Gain_Percent'
     
     # --- RETRAIN ---
-    if len(df_train) > 5: # Threshold
+    if len(df_train) > 4: # Threshold (Runs if 5 or more)
         print(f"Retraining model on {len(df_train)} listed IPOs...")
         X_train = df_train[feature_cols]
         y_train = df_train[target_col]
