@@ -41,7 +41,9 @@ def parse_name(raw_name):
     """Normalizes company name."""
     if not raw_name: return "Unknown"
     name_clean = clean_html(raw_name)
-    normalized = re.sub(r'(?:BSE|NSE)\s*SME.*', '', name_clean).strip()
+    normalized = re.sub(r'(?:BSE|NSE)\s*SME.*', '', name_clean, flags=re.IGNORECASE).strip()
+    # Remove IPO suffixes like IPOU, IPOO, IPOCT, IPO
+    normalized = re.sub(r'\s+IPO[A-Z]*$', '', normalized, flags=re.IGNORECASE).strip()
     return normalized
 
 def parse_currency(val):
