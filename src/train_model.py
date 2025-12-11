@@ -79,8 +79,8 @@ def train_and_predict():
             
     # Calculate Target: Listing Gain Percent
     # Formula: ((Listing_Price - Issue_Price) / Issue_Price) * 100
-    # Filter out rows where Issue_Price is 0 to avoid division by zero
-    df = df[df['Issue_Price'] > 0].copy()
+    # Do NOT filter globally here. We need 0-price rows for 'Upcoming' list.
+    # df = df[df['Issue_Price'] > 0].copy()
     
     if df.empty:
         print("No valid data with Issue Price > 0.")
@@ -182,8 +182,13 @@ def train_and_predict():
             # If Data_Stage is missing or NaN, infer from QIB
             if pd.isna(data_stage) or data_stage == 0:
                 data_stage = "Mature" if sub_qib > 0 else "Early"
-            
-            if data_stage == "Mature" or sub_qib > 0:
+
+            if issue_price <= 0:
+                pred_gain = 0.0
+                pred_price = 0.0
+                method = "Pending_Price"
+                # print(f"[{name}] Issue Price Pending. Skipping prediction.")
+            elif data_stage == "Mature" or sub_qib > 0:
                 # Scenario A: Mature Data -> Use AI Model
                 pred_gain = predictions_gain_model[i]
                 prediction_type = "AI_Model"
