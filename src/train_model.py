@@ -177,58 +177,60 @@ def train_and_predict():
             sector_bonus = row.get('Sector_Bonus', 0)
             
             # Conditional Logic based on Data Stage
-            data_stage = row.get('Data_Stage', 'Early')
+            # Priority 1: Early Stage Check (based on QIB)
+            # We trust QIB signals. If QIB is 0 (or near zero), it is Early Stage.
+            # Even if Price is 0, we use GMP Logic to show the "Implied Premium".
             
-            # If Data_Stage is missing or NaN, infer from QIB
-            if pd.isna(data_stage) or data_stage == 0:
-                data_stage = "Mature" if sub_qib > 0 else "Early"
-
-            if issue_price <= 0:
-                pred_gain = 0.0
-                pred_price = 0.0
-                method = "Pending_Price"
-                # print(f"[{name}] Issue Price Pending. Skipping prediction.")
-            elif data_stage == "Mature" or sub_qib > 0:
-                # Scenario A: Mature Data -> Use AI Model
-                pred_gain = predictions_gain_model[i]
-                prediction_type = "AI_Model"
-                method = "AI_Model"
-                
-                # QIB Boost Logic (Only for AI Model)
-                # Constraint: If Sub_QIB > 50x, ensure predicted gain is at least 30%
-                if sub_qib > 50:
-                    if pred_gain < 30.0:
-                        print(f"  [QIB Boost] {name}: QIB {sub_qib}x > 50x. Enforcing min 30% gain.")
-                        pred_gain = 30.0
-                
-                # Calculate Predicted Price
-                pred_price = issue_price * (1 + pred_gain / 100)
-                
-                # Guardrail: GMP Floor (Safety Check)
-                if pred_price < issue_price and gmp > 0:
-                    print(f"  [Guardrail Triggered] {name}: Pred {pred_price:.2f} < Issue {issue_price} but GMP {gmp} > 0. Clamping.")
-                    pred_price = issue_price + gmp
-                    # Recalculate gain based on clamped price
-                    pred_gain = ((pred_price - issue_price) / issue_price) * 100
-                    
-            else:
-                # Scenario B: Early Stage -> Use GMP + Sector Logic
+            if sub_qib == 0: 
+                # --- SCENARIO B: EARLY STAGE (GMP + SECTOR) ---
                 prediction_type = "GMP_Sector_Logic"
                 method = "GMP_Sector_Logic"
                 
                 # Pred = Issue_Price + GMP + (Sector_Bonus * 10)
-                # Wait, Sector_Bonus is 0 or 1. So it adds 10 rupees? Or 10%?
-                # The prompt says: "Pred = Issue_Price + GMP + (Sector_Bonus * 10)."
-                # This implies adding a flat value to the price.
-                
+                # If Issue_Price is 0, this prediction is essentially just the GMP premium.
                 pred_price = issue_price + gmp + (sector_bonus * 10)
                 
                 if issue_price > 0:
                     pred_gain = ((pred_price - issue_price) / issue_price) * 100
                 else:
-                    pred_gain = 0.0
+                    # Without a base price, we can't show a Gain %. 
+                    # But we can assume the user sees the GMP value.
+                    pred_gain = 0.0 
                 
-                print(f"  [Early Stage] {name}: Using GMP + Sector Logic. Bonus applied: {sector_bonus * 10}")
+                # print(f"  [Early Stage] {name}: Using GMP + Sector Logic. Bonus applied: {sector_bonus * 10}")
+
+            else:
+                # --- SCENARIO A: MATURE STAGE (AI MODEL) ---
+                # QIB > 0 implies mature data. We use the AI Model.
+                
+                pred_gain = predictions_gain_model[i]
+                prediction_type = "AI_Model"
+                
+                if issue_price > 0:
+                    # Standard AI Prediction
+                    method = "AI_Model"
+                    
+                    # QIB Boost Logic (Only for AI Model)
+                    if sub_qib > 50:
+                        if pred_gain < 30.0:
+                            print(f"  [QIB Boost] {name}: QIB {sub_qib}x > 50x. Enforcing min 30% gain.")
+                            pred_gain = 30.0
+                    
+                    # Calculate Predicted Price
+                    pred_price = issue_price * (1 + pred_gain / 100)
+                    
+                    # Guardrail: GMP Floor
+                    if pred_price < issue_price and gmp > 0:
+                        # print(f"  [Guardrail Triggered] {name}: Pred {pred_price:.2f} < Issue {issue_price} but GMP {gmp} > 0. Clamping.")
+                        pred_price = issue_price + gmp
+                        pred_gain = ((pred_price - issue_price) / issue_price) * 100
+                        
+                else:
+                    # Rare Case: High QIB but Unknown Price? (e.g. Price Band not fixed but QIB book built?)
+                    # Or maybe QIB is non-zero because of some other reason.
+                    # Fallback to AI Model Gain % only.
+                    method = "AI_Model"
+                    pred_price = 0.0
 
             print(f"[{name}] Issue: {issue_price} | QIB: {sub_qib}x | Method: {method} | Pred Gain: {pred_gain:.1f}% -> Final Price: ₹{pred_price:.2f}")
             

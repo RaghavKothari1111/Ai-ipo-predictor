@@ -221,44 +221,40 @@ def process_chittorgarh(data):
     return pd.DataFrame(processed)
 
 def calculate_gmp_momentum(name, current_gmp, history_df):
-    """Calculates GMP Momentum: Current GMP - GMP 3 days ago."""
+    """Calculates GMP Momentum: Current GMP - GMP 3 days ago (Sparse Safe)."""
     if history_df.empty:
         return 0.0
         
     # Filter history for this IPO
-    ipo_history = history_df[history_df['IPO_Name'] == name].sort_values('Date_Time')
+    ipo_history = history_df[history_df['IPO_Name'] == name].copy()
     
     if ipo_history.empty:
         return 0.0
         
-    # Find record closest to 3 days ago
-    target_date = datetime.now() - timedelta(days=3)
-    
-    # Convert Date_Time to datetime if not already
+    # Ensure datetime
     if not pd.api.types.is_datetime64_any_dtype(ipo_history['Date_Time']):
         ipo_history['Date_Time'] = pd.to_datetime(ipo_history['Date_Time'])
         
-    # Find closest date
-    # We want a date that is <= target_date
+    ipo_history = ipo_history.sort_values('Date_Time')
+    
+    # Target: 3 days ago
+    target_date = datetime.now() - timedelta(days=3)
+    
+    # Find records ON or BEFORE target date
     past_records = ipo_history[ipo_history['Date_Time'] <= target_date]
     
     if not past_records.empty:
-        # Get the last record from the past (closest to 3 days ago from the past side)
-        # Or we could just take the record closest to 3 days ago regardless of side.
-        # Let's try to find the record closest to 3 days ago.
-        
-        # Calculate time difference
-        ipo_history['diff'] = abs(ipo_history['Date_Time'] - target_date)
-        closest_row = ipo_history.loc[ipo_history['diff'].idxmin()]
-        
-        # If the closest record is too far (e.g. > 5 days), maybe momentum is not valid?
-        # For now, let's just use it.
-        gmp_3d_ago = float(closest_row['GMP'])
-        return current_gmp - gmp_3d_ago
+        # Take the LAST record from the past (closest to the target date from the past)
+        # This represents the state of the IPO 3 days ago.
+        historic_row = past_records.iloc[-1]
+        historic_gmp = float(historic_row['GMP'])
+        return current_gmp - historic_gmp
     else:
-        # If no history older than 3 days, use the oldest available record?
-        # Or just return 0. Let's return 0 to be safe.
-        return 0.0
+        # If no history old enough (e.g. IPO added yesterday), use the FIRST record
+        # This gives momentum since tracking began
+        historic_row = ipo_history.iloc[0]
+        historic_gmp = float(historic_row['GMP'])
+        return current_gmp - historic_gmp
 
 def check_sector_bonus(name):
     """Checks if name contains hype keywords."""
@@ -449,21 +445,58 @@ def main():
     final_df.to_csv(MASTER_CSV_PATH, index=False)
     print(f"Saved {len(final_df)} records to {MASTER_CSV_PATH}")
     
-    # Append to History
+    # Append to History (Optimized: Check for Changes)
     new_history_rows = []
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
+    skipped_count = 0
+    logged_count = 0
+    
+    # Pre-process history for fast lookup
+    last_history_state = {}
+    if not history_df.empty:
+        # Sort by date
+        history_df = history_df.sort_values('Date_Time')
+        # Group by name and take last
+        last_state_df = history_df.drop_duplicates(subset=['IPO_Name'], keep='last')
+        for _, r in last_state_df.iterrows():
+            last_history_state[r['IPO_Name']] = {
+                'GMP': float(r['GMP']),
+                'Sub': float(r['Sub'])
+            }
+            
     for _, row in merged_df.iterrows():
-        # Only add to history if GMP > 0 or Sub > 0
-        if row['GMP'] > 0 or row['Sub_QIB'] > 0:
+        name = row['Name']
+        new_gmp = float(row['GMP'])
+        new_sub = float(row['Sub_QIB'])
+        
+        # Only consider valid data
+        if new_gmp == 0 and new_sub == 0:
+            continue
+            
+        should_log = False
+        
+        if name in last_history_state:
+            last = last_history_state[name]
+            # Check for modification
+            if new_gmp != last['GMP'] or new_sub != last['Sub']:
+                should_log = True
+        else:
+            # New IPO or no history -> Log it
+            should_log = True
+            
+        if should_log:
              new_history_rows.append({
                  'Date_Time': current_time,
-                 'IPO_Name': row['Name'],
-                 'GMP': row['GMP'],
-                 'Sub': row['Sub_QIB'], # Tracking QIB as main sub metric
+                 'IPO_Name': name,
+                 'GMP': new_gmp,
+                 'Sub': new_sub, # Tracking QIB as main sub metric
                  'Nifty_Trend': live_nifty_trend, # Store live trend in history
                  'VIX': live_vix # Store live VIX in history
              })
+             logged_count += 1
+        else:
+             skipped_count += 1
              
     if new_history_rows:
         new_history_df = pd.DataFrame(new_history_rows)
@@ -474,7 +507,10 @@ def main():
             history_df = new_history_df
             
         history_df.to_csv(GMP_HISTORY_CSV_PATH, index=False)
+        print(f"History Optimization: Skipped {skipped_count} duplicate rows. Logged {logged_count} new changes.")
         print(f"Appended {len(new_history_rows)} records to GMP History.")
+    else:
+        print(f"History Optimization: Skipped {skipped_count} duplicate rows. No new changes to log.")
 
     # 4. Trigger Training
     print("\n--- Triggering Training ---")

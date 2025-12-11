@@ -1,22 +1,22 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Ashwini Container Movers,0.0,0.0,0.0,7.0,0.0,Pending_Price,2025-12-12 02:15:05
-Corona Remedies,0.0,0.0,0.0,291.0,293.8,Pending_Price,2025-12-12 02:15:05
-Exim Routes,0.0,0.0,0.0,9.0,0.0,Pending_Price,2025-12-12 02:15:05
-Flywings Simulator Training,0.0,0.0,0.0,0.0,1.56,Pending_Price,2025-12-12 02:15:05
-HRS Aluglaze,0.0,0.0,0.0,15.5,1.08,Pending_Price,2025-12-12 02:15:05
-ICICI Prudential AMC,0.0,0.0,0.0,150.0,0.0,Pending_Price,2025-12-12 02:15:05
-K. V. Toys India,0.0,0.0,0.0,145.0,193.25,Pending_Price,2025-12-12 02:15:05
-KSH International,0.0,0.0,0.0,0.0,117.33,Pending_Price,2025-12-12 02:15:05
-Methodhub Software,0.0,0.0,0.0,17.0,27.55,Pending_Price,2025-12-12 02:15:05
-Nephrocare Health,0.0,0.0,0.0,11.5,0.29,Pending_Price,2025-12-12 02:15:05
-Neptune Logitek,0.0,0.0,0.0,0.0,7.12,Pending_Price,2025-12-12 02:15:05
-Pajson Agro India,0.0,0.0,0.0,9.0,3.54,Pending_Price,2025-12-12 02:15:05
-Park Medi World,0.0,0.0,0.0,8.5,0.34,Pending_Price,2025-12-12 02:15:05
-Prodocs Solutions,0.0,0.0,0.0,0.0,1.59,Pending_Price,2025-12-12 02:15:05
-Riddhi Display Equipments,0.0,0.0,0.0,0.0,2.19,Pending_Price,2025-12-12 02:15:05
-ScaleSauce,0.0,0.0,0.0,80.0,0.0,Pending_Price,2025-12-12 02:15:05
-Shipwaves Online,0.0,0.0,0.0,0.0,0.0,Pending_Price,2025-12-12 02:15:05
-Shyam Dhani Industries,0.0,0.0,0.0,0.0,9.85,Pending_Price,2025-12-12 02:15:05
-Stanbik Agro,0.0,0.0,0.0,0.0,0.0,Pending_Price,2025-12-12 02:15:05
-Unisem Agritech,0.0,0.0,0.0,0.0,0.99,Pending_Price,2025-12-12 02:15:05
-Wakefit Innovations,0.0,0.0,0.0,0.0,3.04,Pending_Price,2025-12-12 02:15:05
+Ashwini Container Movers,0.0,0.0,7.0,7.0,0.0,GMP_Sector_Logic,2025-12-12 02:35:38
+Corona Remedies,0.0,30.84420019754531,0.0,291.0,293.8,AI_Model,2025-12-12 02:35:38
+Exim Routes,0.0,0.0,9.0,9.0,0.0,GMP_Sector_Logic,2025-12-12 02:35:38
+Flywings Simulator Training,0.0,-20.59479206333275,0.0,0.0,1.56,AI_Model,2025-12-12 02:35:38
+HRS Aluglaze,0.0,-20.585294941659527,0.0,15.5,1.08,AI_Model,2025-12-12 02:35:38
+ICICI Prudential AMC,0.0,0.0,150.0,150.0,0.0,GMP_Sector_Logic,2025-12-12 02:35:38
+K. V. Toys India,0.0,52.82244421245991,0.0,145.0,193.25,AI_Model,2025-12-12 02:35:38
+KSH International,0.0,13.671665947039822,0.0,0.0,117.33,AI_Model,2025-12-12 02:35:38
+Methodhub Software,0.0,5.80226061207057,0.0,17.0,27.55,AI_Model,2025-12-12 02:35:38
+Nephrocare Health,0.0,-20.74900156095984,0.0,11.5,0.29,AI_Model,2025-12-12 02:35:38
+Neptune Logitek,0.0,-19.89139519438565,0.0,0.0,7.12,AI_Model,2025-12-12 02:35:38
+Pajson Agro India,0.0,-21.091167059971834,0.0,9.0,3.54,AI_Model,2025-12-12 02:35:38
+Park Medi World,0.0,-19.358309955914173,0.0,8.5,0.34,AI_Model,2025-12-12 02:35:38
+Prodocs Solutions,0.0,-16.378547104170064,0.0,0.0,1.59,AI_Model,2025-12-12 02:35:38
+Riddhi Display Equipments,0.0,-14.405295886513072,0.0,0.0,2.19,AI_Model,2025-12-12 02:35:38
+ScaleSauce,0.0,0.0,80.0,80.0,0.0,GMP_Sector_Logic,2025-12-12 02:35:38
+Shipwaves Online,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2025-12-12 02:35:38
+Shyam Dhani Industries,0.0,-1.5300208478681336,0.0,0.0,9.85,AI_Model,2025-12-12 02:35:38
+Stanbik Agro,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2025-12-12 02:35:38
+Unisem Agritech,0.0,-22.751602093281548,0.0,0.0,0.99,AI_Model,2025-12-12 02:35:38
+Wakefit Innovations,0.0,-19.01285082439815,0.0,0.0,3.04,AI_Model,2025-12-12 02:35:38
