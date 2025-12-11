@@ -17,6 +17,7 @@ GMP_HISTORY_CSV_PATH = os.path.join(DATA_DIR, "gmp_history.csv")
 INVESTORGAIN_URL_TEMPLATE = "https://webnodejs.investorgain.com/cloud/report/data-read/331/{day}/{month}/{year}/{fy}/0/all?search=&v=09-18"
 CHITTORGARH_SME_URL_TEMPLATE = "https://webnodejs.chittorgarh.com/cloud/report/data-read/22/{day}/{month}/{year}/{fy}/0/0/0?search=&v=08-39"
 CHITTORGARH_MAIN_URL_TEMPLATE = "https://webnodejs.chittorgarh.com/cloud/report/data-read/21/{day}/{month}/{year}/{fy}/0/0/0?search=&v=11-25"
+REPORT_82_URL_TEMPLATE = "https://webnodejs.chittorgarh.com/cloud/report/data-read/82/{day}/{month}/{year}/{fy}/0/all/0?search=&v=23-59"
 
 SECTOR_KEYWORDS = ["Solar", "Energy", "Tech", "Defence", "Green"]
 
@@ -126,6 +127,39 @@ def get_market_data():
     except Exception as e:
         print(f"Market Data Error: {e}")
         return 0.0, 12.0
+
+def process_price_report(data):
+    """Process Source 82 (Issue Prices)."""
+    price_map = {}
+    for row in data:
+        raw_name = row.get("~IPO", "")
+        if not raw_name:
+            continue
+            
+        name = parse_name(raw_name)
+        
+        # Extract Price
+        raw_price = clean_html(row.get("Issue Price (Rs.)", ""))
+        price = 0.0
+        
+        if raw_price:
+            # Handle Ranges: "65.00 to 70.00" -> Take 70.00
+            if " to " in raw_price.lower():
+                try:
+                    upper_band = raw_price.lower().split(" to ")[1]
+                    price = float(re.sub(r'[^\d\.]', '', upper_band))
+                except:
+                    price = 0.0
+            else:
+                try:
+                    price = float(re.sub(r'[^\d\.]', '', raw_price))
+                except:
+                    price = 0.0
+                    
+        if price > 0:
+            price_map[name] = price
+            
+    return price_map
 
 def process_investorgain(data):
     """Process Source 1 (Hype) Data."""
@@ -279,6 +313,11 @@ def main():
     df_hype = process_investorgain(data_hype)
     print(f"Fetched {len(df_hype)} records from Investorgain (Master Trigger).")
     
+    print("\n--- Fetching Source 82: Chittorgarh (Issue Prices) ---")
+    data_prices = fetch_json(REPORT_82_URL_TEMPLATE)
+    price_map_82 = process_price_report(data_prices)
+    print(f"Fetched {len(price_map_82)} valid prices from Report 82.")
+    
     print("\n--- Fetching Source 2: Chittorgarh (Fundamentals) ---")
     # Fetch SME
     print("Fetching SME Data...")
@@ -317,11 +356,12 @@ def main():
     matched_mainboard = 0
     matched_sme = 0
     sector_hype_count = 0
+    filled_prices_count = 0
     
     for _, hype_row in df_hype.iterrows():
         hype_name = hype_row['Name']
         
-        # Try exact match
+        # Try exact match for Fundamentals
         if hype_name in fund_dict:
             fund_data = fund_dict[hype_name]
         else:
@@ -348,6 +388,23 @@ def main():
         combined['Sub_Retail'] = fund_data.get('Sub_Retail', 0.0)
         combined['Data_Stage'] = fund_data.get('Data_Stage', 'Early') # Default to Early if missing
         
+        # --- FIX MISSING PRICES (Report 82) ---
+        if combined['Issue_Price'] == 0.0:
+            # Try finding price in Report 82 map
+            # Use fuzzy match against Report 82 keys since they are also normalized
+            price_82_keys = list(price_map_82.keys())
+            
+            # 1. Exact Match
+            if hype_name in price_map_82:
+                combined['Issue_Price'] = price_map_82[hype_name]
+                filled_prices_count += 1
+            else:
+                # 2. Fuzzy Match
+                p_matches = difflib.get_close_matches(hype_name, price_82_keys, n=1, cutoff=0.6)
+                if p_matches:
+                    combined['Issue_Price'] = price_map_82[p_matches[0]]
+                    filled_prices_count += 1
+        
         # Add Live Market Data (Will be preserved for Listed IPOs later)
         combined['Nifty_Trend_30D'] = live_nifty_trend
         combined['Current_VIX'] = live_vix
@@ -367,6 +424,7 @@ def main():
     merged_df = pd.DataFrame(merged_rows)
     print(f"Merged Data Shape: {merged_df.shape}")
     print(f"Enrichment Report: Matched QIB data for {matched_mainboard} Mainboard and {matched_sme} SME IPOs.")
+    print(f"Filled Prices for {filled_prices_count} IPOs using Report 82.")
     print(f"Sector Hype detected in {sector_hype_count} stocks.")
     
     # 3. Save & History
