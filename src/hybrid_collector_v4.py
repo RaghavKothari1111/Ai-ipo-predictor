@@ -499,6 +499,12 @@ def main():
     else:
         final_df = merged_df
         
+    # Flag Corrupted Data (Listed but Missing QIB)
+    # This helps us visually identify bad rows in the CSV
+    for index, row in final_df.iterrows():
+        if row['Status'] == 'Listed' and row['Sub_QIB'] == 0:
+            final_df.at[index, 'Data_Stage'] = 'Corrupted'
+            
     final_df.fillna(0.0, inplace=True)
     final_df.to_csv(MASTER_CSV_PATH, index=False)
     print(f"Saved {len(final_df)} records to {MASTER_CSV_PATH}")

@@ -97,14 +97,35 @@ def train_and_predict():
     # --- DATA QUALITY FILTER ---
     # Filter out rows with missing critical data (Issue_Price <= 0 or Sub_QIB <= 0)
     # We don't want to train on incomplete records.
+    # --- DATA QUALITY FILTER (Sanitization Layer) ---
+    
+    # Filter 1: The "No-Zero-Price" Rule
+    # We cannot train on IPOs with no Issue Price (Division by Zero risk).
     initial_count = len(df_train)
-    df_train = df_train[
-        (df_train['Issue_Price'] > 0) & 
-        (df_train['Sub_QIB'] > 0)
-    ]
-    dropped_count = initial_count - len(df_train)
-    if dropped_count > 0:
-        print(f"⚠️ Data Quality Check: Dropped {dropped_count} listed IPOs due to missing data (Price/QIB).")
+    df_train = df_train[df_train['Issue_Price'] > 0]
+    dropped_price = initial_count - len(df_train)
+    if dropped_price > 0:
+        print(f"⚠️ Sanitization: Dropped {dropped_price} rows due to Zero Issue Price.")
+        
+    # Filter 2: The "Complete Data" Rule (Smart Money Check)
+    # We cannot train "Smart Money" logic if QIB data is missing (0.0).
+    current_count = len(df_train)
+    df_train = df_train[df_train['Sub_QIB'] > 0]
+    dropped_qib = current_count - len(df_train)
+    if dropped_qib > 0:
+        print(f"⚠️ Sanitization: Dropped {dropped_qib} rows due to missing QIB data.")
+
+    # Filter 3: The "Real Listing" Rule
+    # Ensure we actually have a valid Listing Price for the target variable.
+    current_count = len(df_train)
+    df_train = df_train[df_train['Listing_Price'] > 0]
+    dropped_list = current_count - len(df_train)
+    if dropped_list > 0:
+        print(f"⚠️ Sanitization: Dropped {dropped_list} rows due to Zero Listing Price.")
+        
+    total_dropped = dropped_price + dropped_qib + dropped_list
+    if total_dropped > 0:
+         print(f"⚠️ Total Training Rows Dropped: {total_dropped}. Remaining: {len(df_train)}")
         
     df_predict = df[df['Status'] == 'Upcoming'].copy()
     
