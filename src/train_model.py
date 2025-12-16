@@ -231,11 +231,9 @@ def train_and_predict():
                     # Standard AI Prediction
                     method = "AI_Model"
                     
-                    # QIB Boost Logic (Only for AI Model)
-                    if sub_qib > 50:
-                        if pred_gain < 30.0:
-                            print(f"  [QIB Boost] {name}: QIB {sub_qib}x > 50x. Enforcing min 30% gain.")
-                            pred_gain = 30.0
+                    # QIB Boost Logic (REMOVED)
+                    # User requested to let the model handle the predictions naturally.
+                    # We rely on the RandomForest model to learn the QIB -> Gain relationship.
                     
                     # Calculate Predicted Price
                     pred_price = issue_price * (1 + pred_gain / 100)

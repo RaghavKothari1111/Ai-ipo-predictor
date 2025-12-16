@@ -366,7 +366,7 @@ def main():
             fund_data = fund_dict[hype_name]
         else:
             # Try fuzzy match
-            matches = difflib.get_close_matches(hype_name, fund_names, n=1, cutoff=0.5)
+            matches = difflib.get_close_matches(hype_name, fund_names, n=1, cutoff=0.6)
             if matches:
                 fund_data = fund_dict[matches[0]]
             else:
@@ -462,30 +462,31 @@ def main():
                 if name in master_dict:
                     existing_row = master_dict[name]
                     
-                    # 1. Preserve Fundamental Data if new is 0.0
-                    preserve_cols = ['IPO_Size_Cr', 'Sub_QIB', 'Sub_NII', 'Sub_Retail']
-                    for col in preserve_cols:
-                        new_val = float(row_dict.get(col, 0.0))
-                        old_val = float(existing_row.get(col, 0.0))
-                        if new_val == 0.0 and old_val > 0.0:
-                            row_dict[col] = old_val
-                            
-                    # 2. Preserve Historical Market Data if Listed
-                    # If status is Listed, we do NOT want to overwrite VIX/Trend with today's live data
-                    # We want to keep the value that was set when it listed (or backfilled)
+                    # 1. Preserve Fundamental Data ONLY if Listed
+                    # If Upcoming, we trust the fresh feed (so we can correct bad data like 117x QIB -> 0x)
                     if existing_row.get('Status') == 'Listed':
-                        # Check if we have valid historical data
+                        preserve_cols = ['IPO_Size_Cr', 'Sub_QIB', 'Sub_NII', 'Sub_Retail']
+                        for col in preserve_cols:
+                            new_val = float(row_dict.get(col, 0.0))
+                            old_val = float(existing_row.get(col, 0.0))
+                            if new_val == 0.0 and old_val > 0.0:
+                                row_dict[col] = old_val
+                            
+                        # 2. Preserve Historical Market Data if Listed
                         old_vix = float(existing_row.get('Current_VIX', 0.0))
                         if old_vix > 0:
                             row_dict['Current_VIX'] = old_vix
                             row_dict['Nifty_Trend_30D'] = existing_row.get('Nifty_Trend_30D', 0.0)
-                            # print(f"  [Preserving History] {name}: Keeping VIX={old_vix}")
                         
-                        # 3. Preserve Status if new is Upcoming (prevent regression)
-                        if row_dict.get('Status') == 'Upcoming':
-                            row_dict['Status'] = 'Listed'
-                            row_dict['Listing_Price'] = existing_row.get('Listing_Price', 0.0)
-                            row_dict['Listing_Date'] = existing_row.get('Listing_Date', None)
+                        # Preserve Listing Data
+                        row_dict['Listing_Price'] = existing_row.get('Listing_Price', 0.0)
+                        row_dict['Listing_Date'] = existing_row.get('Listing_Date', None)
+                            
+                    # 3. Special Case: If Master says Listed but New feed says Upcoming, PRESERVE Listed status
+                    if existing_row.get('Status') == 'Listed' and row_dict.get('Status') == 'Upcoming':
+                         row_dict['Status'] = 'Listed'
+                         row_dict['Listing_Price'] = existing_row.get('Listing_Price', 0.0)
+                         row_dict['Listing_Date'] = existing_row.get('Listing_Date', None)
                             
                     master_dict[name].update(row_dict)
                 else:
