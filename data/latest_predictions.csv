@@ -1,17 +1,17 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-KSH International,384.0,-22.376149000758545,298.07558783708714,0.0,1.12,AI_Model,2025-12-20 10:00:42
-Neptune Logitek,126.0,0.0,126.0,0.0,0.0,GMP_Sector_Logic,2025-12-20 10:00:42
-Shyam Dhani Industries,70.0,11.772443228278243,78.24071025979477,42.0,9.85,AI_Model,2025-12-20 10:00:42
-Global Ocean Logistics,78.0,2.879761521608355,80.24621398685451,0.0,4.77,AI_Model,2025-12-20 10:00:42
-MARC Technocrats,93.0,4.237285753294174,96.94067575056359,2.0,9.51,AI_Model,2025-12-20 10:00:42
-Phytochem Remedies,98.0,0.0,98.0,0.0,0.0,GMP_Sector_Logic,2025-12-20 10:00:42
-Gujarat Kidney,114.0,6.140350877192982,121.0,7.0,0.0,GMP_Sector_Logic,2025-12-20 10:00:42
-Dachepalli Publishers,102.0,9.803921568627452,112.0,10.0,0.0,GMP_Sector_Logic,2025-12-20 10:00:42
-Admach Systems,239.0,0.0,239.0,0.0,0.0,GMP_Sector_Logic,2025-12-20 10:00:42
-EPW India,97.0,0.0,97.0,0.0,0.0,GMP_Sector_Logic,2025-12-20 10:00:42
-Sundrex Oil,86.0,0.0,86.0,0.0,0.0,GMP_Sector_Logic,2025-12-20 10:00:42
-Apollo Techno Industries,130.0,21.53846153846154,158.0,18.0,0.0,GMP_Sector_Logic,2025-12-20 10:00:42
-Nanta Tech,220.0,11.363636363636363,245.0,15.0,0.0,GMP_Sector_Logic,2025-12-20 10:00:42
-Dhara Rail Projects,126.0,0.0,126.0,0.0,0.0,GMP_Sector_Logic,2025-12-20 10:00:42
-Bai Kakaji Polymers,186.0,0.0,186.0,0.0,0.0,GMP_Sector_Logic,2025-12-20 10:00:42
-E to E Transportation Infrastructure,174.0,37.35632183908046,239.0,65.0,0.0,GMP_Sector_Logic,2025-12-20 10:00:42
+KSH International,384.0,0.0,384.0,0.0,0.0,GMP_Sector_Logic,2025-12-20 12:06:47
+Neptune Logitek,126.0,0.0,126.0,0.0,0.0,GMP_Sector_Logic,2025-12-20 12:06:47
+Shyam Dhani Industries,70.0,17.7638775241348,82.43471426689436,47.0,9.85,AI_Model,2025-12-20 12:06:47
+Global Ocean Logistics,78.0,2.8570420027431256,80.22849276213964,0.0,4.77,AI_Model,2025-12-20 12:06:47
+MARC Technocrats,93.0,3.9946209855885866,96.71499751659738,2.0,9.51,AI_Model,2025-12-20 12:06:47
+Phytochem Remedies,98.0,0.0,98.0,0.0,0.0,GMP_Sector_Logic,2025-12-20 12:06:47
+Gujarat Kidney,114.0,6.140350877192982,121.0,7.0,0.0,GMP_Sector_Logic,2025-12-20 12:06:47
+Dachepalli Publishers,102.0,11.76470588235294,114.0,12.0,0.0,GMP_Sector_Logic,2025-12-20 12:06:47
+Admach Systems,239.0,0.0,239.0,0.0,0.0,GMP_Sector_Logic,2025-12-20 12:06:47
+EPW India,97.0,0.0,97.0,0.0,0.0,GMP_Sector_Logic,2025-12-20 12:06:47
+Sundrex Oil,86.0,0.0,86.0,0.0,0.0,GMP_Sector_Logic,2025-12-20 12:06:47
+Apollo Techno Industries,130.0,21.53846153846154,158.0,18.0,0.0,GMP_Sector_Logic,2025-12-20 12:06:47
+Nanta Tech,220.0,11.363636363636363,245.0,15.0,0.0,GMP_Sector_Logic,2025-12-20 12:06:47
+Dhara Rail Projects,126.0,0.0,126.0,0.0,0.0,GMP_Sector_Logic,2025-12-20 12:06:47
+Bai Kakaji Polymers,186.0,0.0,186.0,0.0,0.0,GMP_Sector_Logic,2025-12-20 12:06:47
+E to E Transportation Infrastructure,174.0,37.35632183908046,239.0,65.0,0.0,GMP_Sector_Logic,2025-12-20 12:06:47
