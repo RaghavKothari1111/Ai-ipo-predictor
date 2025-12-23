@@ -1,7 +1,7 @@
 pandas
 requests
 beautifulsoup4
-yfinance
+yfinance==0.2.66
 lxml
 scikit-learn
 numpy
