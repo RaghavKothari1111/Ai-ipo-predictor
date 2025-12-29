@@ -42,7 +42,13 @@ def parse_name(raw_name):
     """Normalizes company name."""
     if not raw_name: return "Unknown"
     name_clean = clean_html(raw_name)
-    normalized = re.sub(r'(?:BSE|NSE)\s*SME.*', '', name_clean, flags=re.IGNORECASE).strip()
+    # CRITICAL: Clean HTML FIRST before any other processing to prevent leakage
+    name_clean = clean_html(raw_name)
+    
+    # Normalize: Replace '&' with 'and', remove 'Ltd.'/'Limited', remove extra spaces
+    normalized = name_clean.replace("&", "and").replace("Ltd.", "").replace("Limited", "").replace("  ", " ")
+    
+    normalized = re.sub(r'(?:BSE|NSE)\s*SME.*', '', normalized, flags=re.IGNORECASE).strip()
     # Remove IPO suffixes like IPOU, IPOO, IPOCT, IPO, and specifically IPOL@...
     normalized = re.sub(r'\s+IPO[A-Z]*(@.*)?(\(.*\))?$', '', normalized, flags=re.IGNORECASE).strip()
     return normalized
@@ -366,7 +372,8 @@ def main():
             fund_data = fund_dict[hype_name]
         else:
             # Try fuzzy match
-            matches = difflib.get_close_matches(hype_name, fund_names, n=1, cutoff=0.6)
+            # Adjusted cutoff to 0.55 to capture "Gujarat Kidney" (Ratio: 0.57)
+            matches = difflib.get_close_matches(hype_name, fund_names, n=1, cutoff=0.55)
             if matches:
                 fund_data = fund_dict[matches[0]]
             else:
