@@ -1,4 +1,4 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-E to E Transportation Infrastructure,174.0,51.6108086605941,263.80280706943375,145.0,236.3,AI_Model,2025-12-31 22:01:48
-Modern Diagnostic,90.0,11.11111111111111,100.0,10.0,3.51,AI_Model,2025-12-31 22:01:48
-Gabion Technologies,140.0,80.76407298337405,253.06970217672367,25.0,327.08,AI_Model,2025-12-31 22:01:48
+E to E Transportation Infrastructure,0.0,0.0,145.0,145.0,0.0,GMP_Sector_Logic,2026-01-01 00:06:09
+Modern Diagnostic,0.0,0.0,13.0,13.0,0.0,GMP_Sector_Logic,2026-01-01 00:06:09
+Gabion Technologies,81.0,43.20987654320987,116.0,25.0,0.0,GMP_Sector_Logic,2026-01-01 00:06:09
