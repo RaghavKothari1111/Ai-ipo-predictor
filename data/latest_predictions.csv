@@ -1,6 +1,6 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-E to E Transportation Infrastructure,0.0,0.0,162.0,162.0,0.0,GMP_Sector_Logic,2026-01-01 22:02:39
-Modern Diagnostic,0.0,-9.085151838553772,0.0,14.0,8.94,AI_Model,2026-01-01 22:02:39
-Gabion Technologies,81.0,43.20987654320987,116.0,25.0,0.0,GMP_Sector_Logic,2026-01-01 22:02:39
-Yajur Fibres,174.0,0.0,174.0,0.0,0.0,GMP_Sector_Logic,2026-01-01 22:02:39
-Victory Electric Vehicles,41.0,0.0,41.0,0.0,0.0,GMP_Sector_Logic,2026-01-01 22:02:39
+E to E Transportation Infrastructure,0.0,0.0,162.0,162.0,0.0,GMP_Sector_Logic,2026-01-02 00:06:19
+Modern Diagnostic,0.0,-9.085151838553772,0.0,14.0,8.94,AI_Model,2026-01-02 00:06:19
+Gabion Technologies,81.0,43.20987654320987,116.0,25.0,0.0,GMP_Sector_Logic,2026-01-02 00:06:19
+Yajur Fibres,174.0,0.0,174.0,0.0,0.0,GMP_Sector_Logic,2026-01-02 00:06:19
+Victory Electric Vehicles,41.0,0.0,41.0,0.0,0.0,GMP_Sector_Logic,2026-01-02 00:06:19
