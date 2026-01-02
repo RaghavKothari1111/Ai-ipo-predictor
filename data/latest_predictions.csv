@@ -1,5 +1,5 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Modern Diagnostic,0.0,0.30429297818163853,0.0,14.0,8.95,AI_Model,2026-01-02 10:16:02
-Gabion Technologies,81.0,43.20987654320987,116.0,25.0,0.0,GMP_Sector_Logic,2026-01-02 10:16:02
-Yajur Fibres,174.0,0.0,174.0,0.0,0.0,GMP_Sector_Logic,2026-01-02 10:16:02
-Victory Electric Vehicles,41.0,0.0,41.0,0.0,0.0,GMP_Sector_Logic,2026-01-02 10:16:02
+Modern Diagnostic,0.0,1.7574399074097302,0.0,13.5,10.62,AI_Model,2026-01-02 12:10:06
+Gabion Technologies,81.0,43.20987654320987,116.0,25.0,0.0,GMP_Sector_Logic,2026-01-02 12:10:06
+Yajur Fibres,174.0,0.0,174.0,0.0,0.0,GMP_Sector_Logic,2026-01-02 12:10:06
+Victory Electric Vehicles,41.0,0.0,41.0,0.0,0.0,GMP_Sector_Logic,2026-01-02 12:10:06
