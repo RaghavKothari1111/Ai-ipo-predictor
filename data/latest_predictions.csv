@@ -1,9 +1,9 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Modern Diagnostic,0.0,47.508942686358395,0.0,14.0,193.51,AI_Model,2026-01-07 03:56:48
-Gabion Technologies,81.0,3.7157622721415713,84.00976744043467,30.0,1.47,AI_Model,2026-01-07 03:56:48
-Yajur Fibres,174.0,34.48275862068966,234.0,60.0,0.0,GMP_Sector_Logic,2026-01-07 03:56:48
-Victory Electric Vehicles,41.0,0.0,41.0,0.0,0.0,GMP_Sector_Logic,2026-01-07 03:56:48
-Bharat Coking Coal,23.0,50.0,34.5,11.5,0.0,GMP_Sector_Logic,2026-01-07 03:56:48
-Defrail Technologies,74.0,3.165895277759623,76.34276250554213,0.0,1.47,AI_Model,2026-01-07 03:56:48
-Avana Electrosystems,59.0,0.0,59.0,0.0,0.0,GMP_Sector_Logic,2026-01-07 03:56:48
-GRE Renew Enertech,105.0,18.095238095238095,124.0,9.0,0.0,GMP_Sector_Logic,2026-01-07 03:56:48
+Modern Diagnostic,0.0,47.508942686358395,0.0,14.0,193.51,AI_Model,2026-01-07 07:31:46
+Gabion Technologies,81.0,3.7157622721415713,84.00976744043467,30.0,1.47,AI_Model,2026-01-07 07:31:46
+Yajur Fibres,174.0,34.48275862068966,234.0,60.0,0.0,GMP_Sector_Logic,2026-01-07 07:31:46
+Victory Electric Vehicles,41.0,0.0,41.0,0.0,0.0,GMP_Sector_Logic,2026-01-07 07:31:46
+Bharat Coking Coal,23.0,50.0,34.5,11.5,0.0,GMP_Sector_Logic,2026-01-07 07:31:46
+Defrail Technologies,74.0,3.165895277759623,76.34276250554213,0.0,1.47,AI_Model,2026-01-07 07:31:46
+Avana Electrosystems,59.0,0.0,59.0,0.0,0.0,GMP_Sector_Logic,2026-01-07 07:31:46
+GRE Renew Enertech,105.0,18.095238095238095,124.0,9.0,0.0,GMP_Sector_Logic,2026-01-07 07:31:46
