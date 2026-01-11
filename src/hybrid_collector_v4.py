@@ -15,6 +15,7 @@ GMP_HISTORY_CSV_PATH = os.path.join(DATA_DIR, "gmp_history.csv")
 
 # API Templates
 INVESTORGAIN_URL_TEMPLATE = "https://webnodejs.investorgain.com/cloud/report/data-read/331/{day}/{month}/{year}/{fy}/0/all?search=&v=09-18"
+INVESTORGAIN_SUB_URL_TEMPLATE = "https://webnodejs.investorgain.com/cloud/report/data-read/333/{day}/{month}/{year}/{fy}/0/all?search=&v=23-49"
 CHITTORGARH_SME_URL_TEMPLATE = "https://webnodejs.chittorgarh.com/cloud/report/data-read/22/{day}/{month}/{year}/{fy}/0/0/0?search=&v=08-39"
 CHITTORGARH_MAIN_URL_TEMPLATE = "https://webnodejs.chittorgarh.com/cloud/report/data-read/21/{day}/{month}/{year}/{fy}/0/0/0?search=&v=11-25"
 REPORT_82_URL_TEMPLATE = "https://webnodejs.chittorgarh.com/cloud/report/data-read/82/{day}/{month}/{year}/{fy}/0/all/0?search=&v=23-59"
@@ -167,6 +168,73 @@ def process_price_report(data):
             
     return price_map
 
+def process_report_333(data):
+    """Process Investorgain Report 333 (Subscription & Price Data).
+    
+    This is the MASTER subscription source - provides:
+    - IPO Price
+    - QIB, NII (SHNI+BHNI), RII subscription
+    - IPO Size
+    """
+    processed = []
+    for row in data:
+        raw_name = row.get("Name", "")
+        name = parse_name(raw_name)
+        
+        if not name or name == "Unknown":
+            continue
+        
+        # IPO Price
+        try:
+            price = float(row.get("IPO Price", 0))
+        except:
+            price = 0.0
+            
+        # QIB Subscription
+        try:
+            qib = float(row.get("QIB", 0))
+        except:
+            qib = 0.0
+            
+        # NII Subscription (Combined SHNI + BHNI, or use NII directly)
+        try:
+            nii = float(row.get("NII", 0))
+        except:
+            nii = 0.0
+            
+        # RII (Retail) Subscription
+        try:
+            rii = float(row.get("RII", 0))
+        except:
+            rii = 0.0
+            
+        # IPO Size (e.g., "₹13.07 Cr" -> 13.07)
+        try:
+            size_str = row.get("IPO Size", "")
+            size_match = re.search(r'([\\d\\.]+)', size_str.replace(',', ''))
+            ipo_size = float(size_match.group(1)) if size_match else 0.0
+        except:
+            ipo_size = 0.0
+            
+        # Data Stage: If QIB > 0, it's Mature
+        data_stage = "Mature" if qib > 0 else "Early"
+        
+        # Category (SME/Mainboard)
+        category = row.get("~IPO_Category", "Unknown")
+        
+        processed.append({
+            "Name": name,
+            "Issue_Price_333": price,
+            "Sub_QIB_333": qib,
+            "Sub_NII_333": nii,
+            "Sub_Retail_333": rii,
+            "IPO_Size_Cr_333": ipo_size,
+            "Data_Stage_333": data_stage,
+            "IPO_Category": category
+        })
+        
+    return pd.DataFrame(processed)
+
 def process_investorgain(data):
     """Process Source 1 (Hype) Data."""
     processed = []
@@ -221,7 +289,8 @@ def process_chittorgarh(data):
     """Process Source 2 (Fundamental) Data."""
     processed = []
     for row in data:
-        raw_name = row.get("Company Name", "")
+        # Mainboard uses 'Company', SME uses 'Company Name'
+        raw_name = row.get("Company Name", "") or row.get("Company", "")
         name = parse_name(raw_name)
         
         # Issue Size
@@ -324,6 +393,16 @@ def main():
     price_map_82 = process_price_report(data_prices)
     print(f"Fetched {len(price_map_82)} valid prices from Report 82.")
     
+    print("\n--- Fetching Source 333: Investorgain (Subscription & Prices) ---")
+    data_333 = fetch_json(INVESTORGAIN_SUB_URL_TEMPLATE)
+    df_333 = process_report_333(data_333)
+    print(f"Fetched {len(df_333)} records from Report 333 (Master Subscription Source).")
+    
+    # Create lookup dicts from Report 333
+    sub_333_dict = {}
+    for _, r in df_333.iterrows():
+        sub_333_dict[r['Name']] = r.to_dict()
+    
     print("\n--- Fetching Source 2: Chittorgarh (Fundamentals) ---")
     # Fetch SME
     print("Fetching SME Data...")
@@ -389,13 +468,50 @@ def main():
 
         # Combine data
         combined = hype_row.to_dict()
-        combined['IPO_Size_Cr'] = fund_data.get('IPO_Size_Cr', 0.0)
-        combined['Sub_QIB'] = fund_data.get('Sub_QIB', 0.0)
-        combined['Sub_NII'] = fund_data.get('Sub_NII', 0.0)
-        combined['Sub_Retail'] = fund_data.get('Sub_Retail', 0.0)
-        combined['Data_Stage'] = fund_data.get('Data_Stage', 'Early') # Default to Early if missing
         
-        # --- FIX MISSING PRICES (Report 82) ---
+        # --- PRIORITY 1: Investorgain Report 333 (Master Subscription Source) ---
+        # This has the freshest and most accurate data
+        sub_333 = None
+        sub_333_names = list(sub_333_dict.keys())
+        
+        # 1. Try exact match
+        if hype_name in sub_333_dict:
+            sub_333 = sub_333_dict[hype_name]
+        else:
+            # 2. Try fuzzy match
+            matches_333 = difflib.get_close_matches(hype_name, sub_333_names, n=1, cutoff=0.55)
+            if matches_333:
+                sub_333 = sub_333_dict[matches_333[0]]
+        
+        if sub_333:
+            # Use Report 333 data
+            combined['IPO_Size_Cr'] = sub_333.get('IPO_Size_Cr_333', 0.0)
+            combined['Sub_QIB'] = sub_333.get('Sub_QIB_333', 0.0)
+            combined['Sub_NII'] = sub_333.get('Sub_NII_333', 0.0)
+            combined['Sub_Retail'] = sub_333.get('Sub_Retail_333', 0.0)
+            
+            # Fill Issue Price from Report 333 if current is 0
+            if combined['Issue_Price'] == 0.0:
+                price_333 = sub_333.get('Issue_Price_333', 0.0)
+                if price_333 > 0:
+                    combined['Issue_Price'] = price_333
+                    filled_prices_count += 1
+        else:
+            # --- FALLBACK: Chittorgarh Fundamentals ---
+            combined['IPO_Size_Cr'] = fund_data.get('IPO_Size_Cr', 0.0)
+            combined['Sub_QIB'] = fund_data.get('Sub_QIB', 0.0)
+            combined['Sub_NII'] = fund_data.get('Sub_NII', 0.0)
+            combined['Sub_Retail'] = fund_data.get('Sub_Retail', 0.0)
+        
+        # CRITICAL FIX: Data_Stage must be calculated from ACTUAL QIB value, not merge source
+        # This ensures Listed IPOs with valid QIB data are marked as 'Mature'
+        actual_qib = combined['Sub_QIB']
+        if actual_qib > 0:
+            combined['Data_Stage'] = 'Mature'
+        else:
+            combined['Data_Stage'] = 'Early'
+        
+        # --- FIX MISSING PRICES (Report 82 as final fallback) ---
         if combined['Issue_Price'] == 0.0:
             # Try finding price in Report 82 map
             # Use fuzzy match against Report 82 keys since they are also normalized
@@ -506,6 +622,13 @@ def main():
             final_df = merged_df
     else:
         final_df = merged_df
+        
+    # CRITICAL FIX: Recalculate Data_Stage for ALL rows based on actual QIB value
+    # This fixes the bug where Listed IPOs with valid QIB show 'Early' status
+    for index, row in final_df.iterrows():
+        qib_val = float(row.get('Sub_QIB', 0.0))
+        if qib_val > 0:
+            final_df.at[index, 'Data_Stage'] = 'Mature'
         
     # Flag Corrupted Data (Listed but Missing QIB)
     # This helps us visually identify bad rows in the CSV

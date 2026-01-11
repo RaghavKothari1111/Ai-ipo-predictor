@@ -34,7 +34,7 @@ def fetch_and_inspect():
             
             for row in data:
                 name = row.get("Company Name", "")
-                if "ksh" in name.lower() or "pytochem" in name.lower():
+                if "bharat" in name.lower() or "coking" in name.lower():
                     print(f"\n--- FOUND: {name} ---")
                     # Print keys relevant to subscription
                     for k, v in row.items():
