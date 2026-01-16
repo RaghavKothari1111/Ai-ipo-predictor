@@ -1,29 +1,29 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Yajur Fibres,174.0,-17.050168341291187,144.33270708615333,0.0,1.03,AI_Model,2026-01-16 07:33:34
-Victory Electric Vehicles,41.0,0.0,41.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Bharat Coking Coal,23.0,14.821635309608226,26.408976121209893,13.25,310.81,AI_Model,2026-01-16 07:33:34
-Defrail Technologies,74.0,9.95592622549616,81.36738540686717,10.0,71.09,AI_Model,2026-01-16 07:33:34
-Avana Electrosystems,59.0,7.259979031074928,63.28338762833421,13.0,54.97,AI_Model,2026-01-16 07:33:34
-GRE Renew Enertech,105.0,6.666666666666667,112.0,7.0,7.04,AI_Model,2026-01-16 07:33:34
-Narmadesh Brass Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-INDO SMC,149.0,21.476510067114095,181.0,32.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Amagi Media Labs,361.0,7.479224376731302,388.0,27.0,0.03,AI_Model,2026-01-16 07:33:34
-Armour Security,57.0,7.017543859649122,61.0,4.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Aritas Vinyl,47.0,19.148936170212767,56.0,9.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Shadowfax Technologies,81.0,29.542940350101212,104.92978168358198,16.0,271.13,AI_Model,2026-01-16 07:33:34
-KRM Ayurveda,135.0,11.11111111111111,150.0,15.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Digilogic Systems,104.0,4.807692307692308,109.0,5.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Tranway Technologies,81.0,27.983306089498896,103.66647793249412,0.0,271.13,AI_Model,2026-01-16 07:33:34
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 07:33:34
+Yajur Fibres,174.0,-14.650072907453703,148.50887314103056,0.0,1.03,AI_Model,2026-01-16 10:13:19
+Victory Electric Vehicles,41.0,0.0,41.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+Bharat Coking Coal,23.0,15.193497529783922,26.494504431850302,13.9,310.81,AI_Model,2026-01-16 10:13:19
+Defrail Technologies,74.0,9.839014104320196,81.28087043719695,10.0,71.09,AI_Model,2026-01-16 10:13:19
+Avana Electrosystems,59.0,7.262114528946581,63.284647572078484,13.0,54.97,AI_Model,2026-01-16 10:13:19
+GRE Renew Enertech,105.0,6.666666666666667,112.0,7.0,7.04,AI_Model,2026-01-16 10:13:19
+Narmadesh Brass Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+INDO SMC,149.0,21.476510067114095,181.0,32.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+Amagi Media Labs,361.0,6.9252077562326875,386.0,25.0,0.03,AI_Model,2026-01-16 10:13:19
+Armour Security,57.0,7.017543859649122,61.0,4.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+Aritas Vinyl,47.0,19.148936170212767,56.0,9.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+Shadowfax Technologies,81.0,31.021564506904074,106.1274672505923,15.0,271.13,AI_Model,2026-01-16 10:13:19
+KRM Ayurveda,135.0,11.11111111111111,150.0,15.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+Digilogic Systems,239.0,2.092050209205021,244.0,5.0,1.55,AI_Model,2026-01-16 10:13:19
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+Tranway Technologies,81.0,27.983306089498896,103.66647793249412,0.0,271.13,AI_Model,2026-01-16 10:13:19
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-16 10:13:19
