@@ -1,29 +1,29 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-GRE Renew Enertech,105.0,4.637189621174167,109.86904910223288,6.0,14.69,AI_Model,2026-01-20 10:20:10
-Narmadesh Brass Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-INDO SMC,149.0,26.776930238675153,188.89762605562598,19.0,94.94,AI_Model,2026-01-20 10:20:10
-Amagi Media Labs,361.0,5.188889057857531,379.73188949886566,16.0,33.13,AI_Model,2026-01-20 10:20:10
-Armour Security,57.0,-19.500956177757597,45.88445497867817,0.0,1.0,AI_Model,2026-01-20 10:20:10
-Aritas Vinyl,47.0,0.0,47.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Shadowfax Technologies,81.0,41.11389879845372,114.30225802674751,6.0,271.13,AI_Model,2026-01-20 10:20:10
-KRM Ayurveda,135.0,14.814814814814813,155.0,20.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Digilogic Systems,104.0,0.0,104.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Tranway Technologies,81.0,34.158005168465024,108.66798418645668,0.0,271.13,AI_Model,2026-01-20 10:20:10
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Shayona Engineering,144.0,0.0,144.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Hannah Joseph Hospital,70.0,0.0,70.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-NFP Sampoorna Foods,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Accretion Nutraveda,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
-Kasturi Metal Composite,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 10:20:10
+GRE Renew Enertech,105.0,4.76674718967984,110.00508454916384,6.0,14.69,AI_Model,2026-01-20 12:12:45
+Narmadesh Brass Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+INDO SMC,149.0,27.144878819399388,189.4458694409051,17.0,94.94,AI_Model,2026-01-20 12:12:45
+Amagi Media Labs,361.0,4.37149757067154,376.7811062301243,15.0,33.13,AI_Model,2026-01-20 12:12:45
+Armour Security,57.0,-19.500956177757597,45.88445497867817,0.0,1.0,AI_Model,2026-01-20 12:12:45
+Aritas Vinyl,47.0,0.0,47.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Shadowfax Technologies,81.0,42.510052339157994,115.43314239471798,6.5,271.13,AI_Model,2026-01-20 12:12:45
+KRM Ayurveda,135.0,15.555555555555555,156.0,21.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Digilogic Systems,104.0,0.0,104.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Tranway Technologies,81.0,35.04951799230405,109.39010957376628,0.0,271.13,AI_Model,2026-01-20 12:12:45
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Shayona Engineering,144.0,0.0,144.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Hannah Joseph Hospital,70.0,0.0,70.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+NFP Sampoorna Foods,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Accretion Nutraveda,129.0,0.0,129.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
+Kasturi Metal Composite,64.0,0.0,64.0,0.0,0.0,GMP_Sector_Logic,2026-01-20 12:12:45
