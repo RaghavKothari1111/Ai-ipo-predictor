@@ -1,25 +1,25 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Armour Security,57.0,-19.401942918668052,45.94089253635921,0.0,1.0,AI_Model,2026-01-22 04:00:08
-Aritas Vinyl,47.0,-17.619173820750724,38.71898830424716,0.0,1.0,AI_Model,2026-01-22 04:00:08
-Shadowfax Technologies,81.0,34.81295262914717,109.19849162960921,1.5,271.13,AI_Model,2026-01-22 04:00:08
-KRM Ayurveda,135.0,8.88888888888889,147.0,12.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-Digilogic Systems,104.0,-18.865777695832858,84.37959119633382,0.0,0.57,AI_Model,2026-01-22 04:00:08
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-Tranway Technologies,81.0,33.30220710755783,107.97478775712183,0.0,271.13,AI_Model,2026-01-22 04:00:08
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-Shayona Engineering,144.0,0.0,144.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-Hannah Joseph Hospital,70.0,0.0,70.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-Accretion Nutraveda,129.0,0.0,129.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
-Kasturi Metal Composite,64.0,0.0,64.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 04:00:08
+Armour Security,57.0,-19.401942918668052,45.94089253635921,0.0,1.0,AI_Model,2026-01-22 07:37:00
+Aritas Vinyl,47.0,-17.619173820750724,38.71898830424716,0.0,1.0,AI_Model,2026-01-22 07:37:00
+Shadowfax Technologies,81.0,34.81295262914717,109.19849162960921,1.5,271.13,AI_Model,2026-01-22 07:37:00
+KRM Ayurveda,135.0,8.88888888888889,147.0,12.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+Digilogic Systems,104.0,-18.865777695832858,84.37959119633382,0.0,0.57,AI_Model,2026-01-22 07:37:00
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+Tranway Technologies,81.0,33.30220710755783,107.97478775712183,0.0,271.13,AI_Model,2026-01-22 07:37:00
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+Shayona Engineering,144.0,0.0,144.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+Hannah Joseph Hospital,70.0,0.0,70.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+Accretion Nutraveda,129.0,0.0,129.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
+Kasturi Metal Composite,64.0,0.0,64.0,0.0,0.0,GMP_Sector_Logic,2026-01-22 07:37:00
