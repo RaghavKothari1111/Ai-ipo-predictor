@@ -1,27 +1,27 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Shadowfax Technologies,81.0,38.51326322012116,112.19574320829814,0.0,271.13,AI_Model,2026-01-24 09:12:11
-KRM Ayurveda,135.0,10.378022577628816,149.01033047979888,17.0,63.31,AI_Model,2026-01-24 09:12:11
-Digilogic Systems,104.0,-17.701798919091406,85.59012912414494,0.0,1.6,AI_Model,2026-01-24 09:12:11
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Tranway Technologies,81.0,35.942406121893214,110.1133489587335,0.0,271.13,AI_Model,2026-01-24 09:12:11
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Shayona Engineering,144.0,-6.040893022304191,135.30111404788195,0.0,3.33,AI_Model,2026-01-24 09:12:11
-Hannah Joseph Hospital,70.0,-12.777459528003323,61.05577833039767,0.0,0.63,AI_Model,2026-01-24 09:12:11
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Accretion Nutraveda,129.0,0.0,129.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Kasturi Metal Composite,64.0,0.0,64.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Msafe Equipments,123.0,8.94308943089431,134.0,11.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Kanishk Aluminium India,73.0,0.0,73.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-CKK Retail Mart,163.0,0.0,163.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
-Biopol Chemicals,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 09:12:11
+Shadowfax Technologies,81.0,38.598063059101946,112.26443107787257,2.0,271.13,AI_Model,2026-01-24 10:08:36
+KRM Ayurveda,135.0,10.378022577628816,149.01033047979888,17.0,63.31,AI_Model,2026-01-24 10:08:36
+Digilogic Systems,104.0,-17.701798919091406,85.59012912414494,0.0,1.6,AI_Model,2026-01-24 10:08:36
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Tranway Technologies,81.0,35.942406121893214,110.1133489587335,0.0,271.13,AI_Model,2026-01-24 10:08:36
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Shayona Engineering,144.0,-6.040893022304191,135.30111404788195,0.0,3.33,AI_Model,2026-01-24 10:08:36
+Hannah Joseph Hospital,70.0,-12.777459528003323,61.05577833039767,0.0,0.63,AI_Model,2026-01-24 10:08:36
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Accretion Nutraveda,129.0,0.0,129.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Kasturi Metal Composite,64.0,0.0,64.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Msafe Equipments,123.0,8.94308943089431,134.0,11.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Kanishk Aluminium India,73.0,0.0,73.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+CKK Retail Mart,163.0,0.0,163.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
+Biopol Chemicals,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-24 10:08:36
