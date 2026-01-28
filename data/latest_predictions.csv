@@ -1,25 +1,25 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-KRM Ayurveda,135.0,11.189731780786861,150.10613790406225,18.0,63.31,AI_Model,2026-01-28 14:09:08
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-Tranway Technologies,81.0,35.08169457123931,109.41617260270384,0.0,271.13,AI_Model,2026-01-28 14:09:08
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-Shayona Engineering,144.0,-5.728718388413678,135.75064552068432,0.0,3.33,AI_Model,2026-01-28 14:09:08
-Hannah Joseph Hospital,70.0,-5.890537605302358,65.87662367628835,0.0,1.08,AI_Model,2026-01-28 14:09:08
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-Accretion Nutraveda,129.0,0.0,129.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-Kasturi Metal Composite,64.0,-19.331025771360505,51.62814350632928,0.0,4.0,AI_Model,2026-01-28 14:09:08
-Msafe Equipments,123.0,17.88617886178862,145.0,22.0,0.29,AI_Model,2026-01-28 14:09:08
-Kanishk Aluminium India,73.0,0.0,73.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-CKK Retail Mart,163.0,0.0,163.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
-Biopol Chemicals,108.0,0.0,108.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 14:09:08
+KRM Ayurveda,135.0,11.854478324565664,151.00354573816364,19.5,63.31,AI_Model,2026-01-28 16:04:09
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+Tranway Technologies,81.0,35.08169457123931,109.41617260270384,0.0,271.13,AI_Model,2026-01-28 16:04:09
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+Shayona Engineering,144.0,-5.481230763214371,136.10702770097132,0.0,3.33,AI_Model,2026-01-28 16:04:09
+Hannah Joseph Hospital,70.0,-5.890537605302358,65.87662367628835,0.0,1.08,AI_Model,2026-01-28 16:04:09
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+Accretion Nutraveda,129.0,0.0,129.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+Kasturi Metal Composite,64.0,-20.285465986755014,51.01730176847679,0.0,4.0,AI_Model,2026-01-28 16:04:09
+Msafe Equipments,123.0,17.88617886178862,145.0,22.0,0.8,AI_Model,2026-01-28 16:04:09
+Kanishk Aluminium India,73.0,0.0,73.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+CKK Retail Mart,163.0,0.0,163.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
+Biopol Chemicals,108.0,0.0,108.0,0.0,0.0,GMP_Sector_Logic,2026-01-28 16:04:09
