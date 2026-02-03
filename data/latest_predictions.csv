@@ -1,26 +1,26 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-Tranway Technologies,81.0,35.89561700387053,110.07544977313513,0.0,271.13,AI_Model,2026-02-03 10:46:35
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-Accretion Nutraveda,129.0,13.178294573643413,146.0,17.0,1.01,AI_Model,2026-02-03 10:46:35
-Msafe Equipments,123.0,33.46805393676086,164.16570634221586,24.0,117.97,AI_Model,2026-02-03 10:46:35
-Kanishk Aluminium India,73.0,0.0,73.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-CKK Retail Mart,163.0,-15.665666948339169,137.46496287420715,0.0,1.12,AI_Model,2026-02-03 10:46:35
-Biopol Chemicals,108.0,0.0,108.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-Grover Jewells,88.0,0.0,88.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-Brandman Retail,176.0,5.113636363636364,185.0,9.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-Fractal Analytics,0.0,0.0,300.0,300.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-Aye Finance,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
-PAN HR Solutions,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 10:46:35
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+Tranway Technologies,81.0,35.89561700387053,110.07544977313513,0.0,271.13,AI_Model,2026-02-03 12:28:05
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+Accretion Nutraveda,129.0,16.27906976744186,150.0,21.0,1.01,AI_Model,2026-02-03 12:28:05
+Msafe Equipments,123.0,33.46805393676086,164.16570634221586,23.0,117.97,AI_Model,2026-02-03 12:28:05
+Kanishk Aluminium India,73.0,0.0,73.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+CKK Retail Mart,163.0,-15.47079042334901,137.7826116099411,0.0,1.12,AI_Model,2026-02-03 12:28:05
+Biopol Chemicals,108.0,0.0,108.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+Grover Jewells,88.0,0.0,88.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+Brandman Retail,176.0,4.829545454545454,184.5,8.5,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+Fractal Analytics,0.0,0.0,270.0,270.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+Aye Finance,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
+PAN HR Solutions,78.0,0.0,78.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 12:28:05
