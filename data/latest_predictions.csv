@@ -1,24 +1,24 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-Tranway Technologies,81.0,37.240072906584984,111.16445905433383,0.0,271.13,AI_Model,2026-02-02 22:17:45
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-Accretion Nutraveda,129.0,13.178294573643413,146.0,17.0,1.01,AI_Model,2026-02-02 22:17:45
-Kasturi Metal Composite,64.0,-5.403027702569289,60.54206227035566,0.0,4.0,AI_Model,2026-02-02 22:17:45
-Msafe Equipments,123.0,29.96570158820414,159.85781295349108,17.0,117.97,AI_Model,2026-02-02 22:17:45
-Kanishk Aluminium India,73.0,0.0,73.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-CKK Retail Mart,163.0,-14.375742821328691,139.5675392012342,0.0,1.12,AI_Model,2026-02-02 22:17:45
-Biopol Chemicals,108.0,0.0,108.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-Grover Jewells,88.0,0.0,88.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
-Brandman Retail,176.0,0.0,176.0,0.0,0.0,GMP_Sector_Logic,2026-02-02 22:17:45
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+Tranway Technologies,81.0,37.240072906584984,111.16445905433383,0.0,271.13,AI_Model,2026-02-03 08:04:03
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+Accretion Nutraveda,129.0,13.178294573643413,146.0,17.0,1.01,AI_Model,2026-02-03 08:04:03
+Kasturi Metal Composite,64.0,-5.403027702569289,60.54206227035566,0.0,4.0,AI_Model,2026-02-03 08:04:03
+Msafe Equipments,123.0,30.11895982105232,160.04632057989437,20.0,117.97,AI_Model,2026-02-03 08:04:03
+Kanishk Aluminium India,73.0,0.0,73.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+CKK Retail Mart,163.0,-14.375742821328691,139.5675392012342,0.0,1.12,AI_Model,2026-02-03 08:04:03
+Biopol Chemicals,108.0,0.0,108.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+Grover Jewells,88.0,0.0,88.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
+Brandman Retail,176.0,0.0,176.0,0.0,0.0,GMP_Sector_Logic,2026-02-03 08:04:03
