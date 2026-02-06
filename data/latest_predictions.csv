@@ -1,24 +1,24 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-Tranway Technologies,81.0,32.12420265076484,107.02060414711951,0.0,271.13,AI_Model,2026-02-06 12:30:56
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-Biopol Chemicals,108.0,0.0,108.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-Grover Jewells,88.0,2.840909090909091,90.5,2.5,3.82,AI_Model,2026-02-06 12:30:56
-Brandman Retail,176.0,13.458777868533792,199.6874490486195,30.0,0.01,AI_Model,2026-02-06 12:30:56
-Fractal Analytics,900.0,6.1222222222222245,955.1,55.1,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-Aye Finance,129.0,0.7751937984496124,130.0,1.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-PAN HR Solutions,78.0,0.0,78.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
-Marushika Technology,81.0,34.23572838142381,108.7309399889533,0.0,271.13,AI_Model,2026-02-06 12:30:56
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 12:30:56
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+Tranway Technologies,81.0,32.12420265076484,107.02060414711951,0.0,271.13,AI_Model,2026-02-06 14:20:57
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+Biopol Chemicals,108.0,0.0,108.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+Grover Jewells,88.0,2.840909090909091,90.5,2.5,7.79,AI_Model,2026-02-06 14:20:57
+Brandman Retail,176.0,22.281002721650534,215.21456479010496,36.0,25.36,AI_Model,2026-02-06 14:20:57
+Fractal Analytics,900.0,8.555555555555555,977.0,77.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+Aye Finance,129.0,0.7751937984496124,130.0,1.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+PAN HR Solutions,78.0,0.0,78.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
+Marushika Technology,81.0,34.23572838142381,108.7309399889533,0.0,271.13,AI_Model,2026-02-06 14:20:57
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-06 14:20:57
