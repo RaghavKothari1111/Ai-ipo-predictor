@@ -1,24 +1,25 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
-Tranway Technologies,81.0,30.10459972970489,105.38472578106096,0.0,271.13,AI_Model,2026-02-10 04:11:15
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
-Biopol Chemicals,108.0,-16.60392579203969,90.06776014459714,0.0,4.0,AI_Model,2026-02-10 04:11:15
-Grover Jewells,88.0,-2.359996498974966,85.92320308090203,0.0,11.32,AI_Model,2026-02-10 04:11:15
-Brandman Retail,176.0,14.68954129814411,201.85359268473363,15.0,85.24,AI_Model,2026-02-10 04:11:15
-Fractal Analytics,900.0,0.8888888888888888,908.0,8.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
-Aye Finance,129.0,-17.003630395464633,107.06531678985063,0.0,0.14,AI_Model,2026-02-10 04:11:15
-PAN HR Solutions,78.0,-19.932872976957434,62.452359077973206,0.0,3.52,AI_Model,2026-02-10 04:11:15
-Marushika Technology,81.0,34.237374592623794,108.73227342002527,0.0,271.13,AI_Model,2026-02-10 04:11:15
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 04:11:15
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+Tranway Technologies,81.0,30.10459972970489,105.38472578106096,0.0,271.13,AI_Model,2026-02-10 08:16:52
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+Biopol Chemicals,108.0,-16.60392579203969,90.06776014459714,0.0,4.0,AI_Model,2026-02-10 08:16:52
+Grover Jewells,88.0,-2.359996498974966,85.92320308090203,0.0,11.32,AI_Model,2026-02-10 08:16:52
+Brandman Retail,176.0,14.68954129814411,201.85359268473363,15.0,85.24,AI_Model,2026-02-10 08:16:52
+Fractal Analytics,900.0,0.8888888888888888,908.0,8.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+Aye Finance,129.0,-17.003630395464633,107.06531678985063,0.0,0.14,AI_Model,2026-02-10 08:16:52
+PAN HR Solutions,78.0,-19.932872976957434,62.452359077973206,0.0,3.52,AI_Model,2026-02-10 08:16:52
+Marushika Technology,81.0,34.237374592623794,108.73227342002527,0.0,271.13,AI_Model,2026-02-10 08:16:52
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
+Fractal Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-10 08:16:52
