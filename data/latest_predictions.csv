@@ -1,25 +1,25 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
-Tranway Technologies,81.0,30.10459972970489,105.38472578106096,0.0,271.13,AI_Model,2026-02-11 02:21:04
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
-Biopol Chemicals,108.0,3.7037037037037033,112.0,4.0,21.05,AI_Model,2026-02-11 02:21:04
-Grover Jewells,88.0,-2.6242228792999684,85.69068386621603,0.0,11.32,AI_Model,2026-02-11 02:21:04
-Brandman Retail,176.0,16.203385066890814,204.51795771772782,17.0,85.24,AI_Model,2026-02-11 02:21:04
-Fractal Analytics,900.0,0.7777777777777778,907.0,7.0,0.03,AI_Model,2026-02-11 02:21:04
-Aye Finance,129.0,-17.182687987087668,106.83433249665691,0.0,0.14,AI_Model,2026-02-11 02:21:04
-PAN HR Solutions,78.0,-3.8572432980546414,74.99135022751739,0.0,6.57,AI_Model,2026-02-11 02:21:04
-Marushika Technology,81.0,30.571984543367112,105.76330748012737,0.0,271.13,AI_Model,2026-02-11 02:21:04
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
-Fractal Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 02:21:04
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
+Tranway Technologies,81.0,30.10459972970489,105.38472578106096,0.0,271.13,AI_Model,2026-02-11 04:15:08
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
+Biopol Chemicals,108.0,3.7037037037037033,112.0,4.0,21.05,AI_Model,2026-02-11 04:15:08
+Grover Jewells,88.0,-2.6242228792999684,85.69068386621603,0.0,11.32,AI_Model,2026-02-11 04:15:08
+Brandman Retail,176.0,16.203385066890814,204.51795771772782,17.0,85.24,AI_Model,2026-02-11 04:15:08
+Fractal Analytics,900.0,0.7777777777777778,907.0,7.0,0.03,AI_Model,2026-02-11 04:15:08
+Aye Finance,129.0,-17.182687987087668,106.83433249665691,0.0,0.14,AI_Model,2026-02-11 04:15:08
+PAN HR Solutions,78.0,-3.8572432980546414,74.99135022751739,0.0,6.57,AI_Model,2026-02-11 04:15:08
+Marushika Technology,81.0,30.571984543367112,105.76330748012737,0.0,271.13,AI_Model,2026-02-11 04:15:08
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
+Fractal Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 04:15:08
