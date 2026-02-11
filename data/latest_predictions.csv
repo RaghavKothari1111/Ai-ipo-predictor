@@ -1,27 +1,27 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-Tranway Technologies,81.0,30.10459972970489,105.38472578106096,0.0,271.13,AI_Model,2026-02-11 16:25:20
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-Biopol Chemicals,108.0,3.7037037037037033,112.0,4.0,21.05,AI_Model,2026-02-11 16:25:20
-Grover Jewells,88.0,-2.6242228792999684,85.69068386621603,0.0,11.32,AI_Model,2026-02-11 16:25:20
-Brandman Retail,176.0,16.203385066890814,204.51795771772782,17.0,85.24,AI_Model,2026-02-11 16:25:20
-Fractal Analytics,900.0,0.2222222222222222,902.0,2.0,4.41,AI_Model,2026-02-11 16:25:20
-Aye Finance,129.0,-16.95190336322512,107.1320446614396,0.0,1.62,AI_Model,2026-02-11 16:25:20
-PAN HR Solutions,78.0,-4.148011048383556,74.76455138226082,0.0,6.57,AI_Model,2026-02-11 16:25:20
-Marushika Technology,74.0,10.073229505035366,81.45418983372618,0.0,71.09,AI_Model,2026-02-11 16:25:20
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-Fractal Industries,515.0,1.3592233009708738,522.0,7.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-PNGS Reva Diamond Jewellery,0.0,0.0,10.0,10.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
-Clean Max Enviro Energy Solutions,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 16:25:20
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+Tranway Technologies,81.0,30.10459972970489,105.38472578106096,0.0,271.13,AI_Model,2026-02-11 18:50:43
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+Biopol Chemicals,108.0,3.7037037037037033,112.0,4.0,21.05,AI_Model,2026-02-11 18:50:43
+Grover Jewells,88.0,-2.6242228792999684,85.69068386621603,0.0,11.32,AI_Model,2026-02-11 18:50:43
+Brandman Retail,176.0,16.203385066890814,204.51795771772782,17.0,85.24,AI_Model,2026-02-11 18:50:43
+Fractal Analytics,900.0,0.2222222222222222,902.0,2.0,4.41,AI_Model,2026-02-11 18:50:43
+Aye Finance,129.0,0.27131782945735994,129.35,0.35,1.62,AI_Model,2026-02-11 18:50:43
+PAN HR Solutions,78.0,-4.148011048383556,74.76455138226082,0.0,6.57,AI_Model,2026-02-11 18:50:43
+Marushika Technology,74.0,10.073229505035366,81.45418983372618,0.0,71.09,AI_Model,2026-02-11 18:50:43
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+Fractal Industries,515.0,1.3592233009708738,522.0,7.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+PNGS Reva Diamond Jewellery,0.0,0.0,14.0,14.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
+Clean Max Enviro Energy Solutions,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-11 18:50:43
