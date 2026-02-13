@@ -1,27 +1,23 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-Tranway Technologies,81.0,30.10459972970489,105.38472578106096,0.0,271.13,AI_Model,2026-02-13 08:10:29
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-Biopol Chemicals,108.0,3.7037037037037033,112.0,4.0,21.05,AI_Model,2026-02-13 08:10:29
-Grover Jewells,88.0,-2.6242228792999684,85.69068386621603,0.0,11.32,AI_Model,2026-02-13 08:10:29
-Brandman Retail,176.0,16.203385066890814,204.51795771772782,17.0,85.24,AI_Model,2026-02-13 08:10:29
-Fractal Analytics,900.0,-15.1269727578381,763.8572451794571,0.0,4.41,AI_Model,2026-02-13 08:10:29
-Aye Finance,129.0,0.27131782945735994,129.35,0.35,1.62,AI_Model,2026-02-13 08:10:29
-PAN HR Solutions,78.0,-3.8572432980546414,74.99135022751739,0.0,6.57,AI_Model,2026-02-13 08:10:29
-Marushika Technology,117.0,8.547008547008547,127.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-Fractal Industries,515.0,0.9708737864077669,520.0,5.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-PNGS Reva Diamond Jewellery,386.0,5.181347150259067,406.0,20.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
-Clean Max Enviro Energy Solutions,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 08:10:29
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+Tranway Technologies,81.0,31.24574761139148,106.3090555652271,0.0,271.13,AI_Model,2026-02-13 10:52:58
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+Fractal Analytics,900.0,1.1111111111111112,910.0,10.0,4.41,AI_Model,2026-02-13 10:52:58
+Aye Finance,129.0,0.27131782945735994,129.35,0.35,1.62,AI_Model,2026-02-13 10:52:58
+Marushika Technology,117.0,8.547008547008547,127.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+Fractal Industries,515.0,0.9708737864077669,520.0,5.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+PNGS Reva Diamond Jewellery,386.0,7.772020725388601,416.0,30.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
+Clean Max Enviro Energy Solutions,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-13 10:52:58
