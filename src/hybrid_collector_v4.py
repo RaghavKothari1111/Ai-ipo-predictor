@@ -211,7 +211,7 @@ def process_report_333(data):
         # IPO Size (e.g., "₹13.07 Cr" -> 13.07)
         try:
             size_str = row.get("IPO Size", "")
-            size_match = re.search(r'([\\d\\.]+)', size_str.replace(',', ''))
+            size_match = re.search(r'([\d\.]+)', size_str.replace(',', ''))
             ipo_size = float(size_match.group(1)) if size_match else 0.0
         except:
             ipo_size = 0.0
@@ -387,6 +387,8 @@ def main():
     data_hype = fetch_json(INVESTORGAIN_URL_TEMPLATE)
     df_hype = process_investorgain(data_hype)
     print(f"Fetched {len(df_hype)} records from Investorgain (Master Trigger).")
+    if len(df_hype) == 0:
+        print("⚠️ WARNING: Investorgain 331 API returned ZERO records. This will cause missing data.")
     
     print("\n--- Fetching Source 82: Chittorgarh (Issue Prices) ---")
     data_prices = fetch_json(REPORT_82_URL_TEMPLATE)
@@ -397,6 +399,8 @@ def main():
     data_333 = fetch_json(INVESTORGAIN_SUB_URL_TEMPLATE)
     df_333 = process_report_333(data_333)
     print(f"Fetched {len(df_333)} records from Report 333 (Master Subscription Source).")
+    if len(df_333) == 0:
+        print("⚠️ WARNING: Investorgain 333 API returned ZERO records. Subscription data will be missing.")
     
     # Create lookup dicts from Report 333
     sub_333_dict = {}
@@ -630,11 +634,21 @@ def main():
         if qib_val > 0:
             final_df.at[index, 'Data_Stage'] = 'Mature'
         
-    # Flag Corrupted Data (Listed but Missing QIB)
-    # This helps us visually identify bad rows in the CSV
+    # Flag Corrupted Data (Listed but ALL subscription data missing)
+    # Only flag as Corrupted if ALL of QIB, NII, and Retail are zero.
+    # SME IPOs legitimately have QIB=0 (no institutional category) but
+    # will have NII or Retail > 0, so they should NOT be flagged.
+    corrupted_count = 0
     for index, row in final_df.iterrows():
-        if row['Status'] == 'Listed' and row['Sub_QIB'] == 0:
-            final_df.at[index, 'Data_Stage'] = 'Corrupted'
+        if row['Status'] == 'Listed':
+            qib = float(row.get('Sub_QIB', 0))
+            nii = float(row.get('Sub_NII', 0))
+            retail = float(row.get('Sub_Retail', 0))
+            if qib == 0 and nii == 0 and retail == 0:
+                final_df.at[index, 'Data_Stage'] = 'Corrupted'
+                corrupted_count += 1
+    if corrupted_count > 0:
+        print(f"⚠️ Flagged {corrupted_count} Listed IPOs as Corrupted (all subscription data missing).")
             
     final_df.fillna(0.0, inplace=True)
     final_df.to_csv(MASTER_CSV_PATH, index=False)
