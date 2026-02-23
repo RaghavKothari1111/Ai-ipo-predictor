@@ -1,30 +1,30 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Tranway Technologies,81.0,34.042211244764715,108.57419110825943,0.0,271.13,AI_Model,2026-02-23 12:40:38
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Fractal Industries,216.0,2.314814814814815,221.0,5.0,5.95,AI_Model,2026-02-23 12:40:38
-PNGS Reva Diamond Jewellery,386.0,3.6269430051813467,400.0,14.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Clean Max Enviro Energy Solutions,1053.0,0.1899335232668566,1055.0,2.0,0.33,AI_Model,2026-02-23 12:40:38
-Shree Ram Twistex,104.0,5.288461538461538,109.5,5.5,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Gaudium IVF,79.0,9.49367088607595,86.5,7.5,0.02,AI_Model,2026-02-23 12:40:38
-Yashhtej Industries (India),110.0,0.0,110.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Mobilise App,80.0,20.0,96.0,16.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Accord Transformer and Switchgear,46.0,28.26086956521739,59.0,13.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Manilam Industries,69.0,0.0,69.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Kiaasa Retail,127.0,20.47244094488189,153.0,26.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Yaap Digital,145.0,0.0,145.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
-Omnitech Engineering,144.0,9.027777777777777,157.0,13.0,3.33,AI_Model,2026-02-23 12:40:38
-Striders Impex,72.0,0.0,72.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 12:40:38
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Tranway Technologies,81.0,34.042211244764715,108.57419110825943,0.0,271.13,AI_Model,2026-02-23 14:26:02
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Fractal Industries,216.0,2.314814814814815,221.0,5.0,5.95,AI_Model,2026-02-23 14:26:02
+PNGS Reva Diamond Jewellery,386.0,3.1088082901554404,398.0,12.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Clean Max Enviro Energy Solutions,1053.0,0.1899335232668566,1055.0,2.0,0.94,AI_Model,2026-02-23 14:26:02
+Shree Ram Twistex,104.0,5.769230769230769,110.0,6.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Gaudium IVF,79.0,0.21309191122930357,79.16834260987116,6.0,0.02,AI_Model,2026-02-23 14:26:02
+Yashhtej Industries (India),110.0,0.0,110.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Mobilise App,80.0,20.0,96.0,16.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Accord Transformer and Switchgear,46.0,28.26086956521739,59.0,13.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Manilam Industries,69.0,-2.7976678382471776,67.06960919160944,0.0,0.11,AI_Model,2026-02-23 14:26:02
+Kiaasa Retail,127.0,0.7363204950096777,127.93512702866228,26.0,1.0,AI_Model,2026-02-23 14:26:02
+Yaap Digital,145.0,0.0,145.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
+Omnitech Engineering,144.0,6.25,153.0,9.0,3.33,AI_Model,2026-02-23 14:26:02
+Striders Impex,72.0,0.0,72.0,0.0,0.0,GMP_Sector_Logic,2026-02-23 14:26:02
