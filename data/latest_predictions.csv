@@ -1,28 +1,28 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Tranway Technologies,81.0,33.70474615529364,108.30084438578785,0.0,271.13,AI_Model,2026-03-04 16:11:28
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Yaap Digital,145.0,-2.53022780257419,141.33116968626743,0.0,8.29,AI_Model,2026-03-04 16:11:28
-Omnitech Engineering,227.0,4.405286343612335,237.0,10.0,3.0,AI_Model,2026-03-04 16:11:28
-Striders Impex,72.0,-5.61936036229782,67.95406053914557,0.0,2.03,AI_Model,2026-03-04 16:11:28
-Acetech E-Commerce,112.0,-6.310334965408094,104.93242483874293,0.0,1.0,AI_Model,2026-03-04 16:11:28
-SEDEMAC Mechatronics,1352.0,0.22189349112426035,1355.0,3.0,0.87,AI_Model,2026-03-04 16:11:28
-Elfin Agro India,47.0,0.0,47.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Srinibas Pradhan Constructions,98.0,0.0,98.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Rajputana Stainless,122.0,0.0,122.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Raajmarg Infra Investment Trust,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
-Innovision,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 16:11:28
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Tranway Technologies,81.0,33.70474615529364,108.30084438578785,0.0,271.13,AI_Model,2026-03-04 18:36:08
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Yaap Digital,145.0,-2.53022780257419,141.33116968626743,0.0,8.29,AI_Model,2026-03-04 18:36:08
+Omnitech Engineering,227.0,4.405286343612335,237.0,10.0,3.0,AI_Model,2026-03-04 18:36:08
+Striders Impex,72.0,-5.61936036229782,67.95406053914557,0.0,2.03,AI_Model,2026-03-04 18:36:08
+Acetech E-Commerce,112.0,-6.526093433743881,104.69077535420685,0.0,1.0,AI_Model,2026-03-04 18:36:08
+SEDEMAC Mechatronics,1352.0,2.2189349112426036,1382.0,30.0,0.87,AI_Model,2026-03-04 18:36:08
+Elfin Agro India,47.0,0.0,47.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Srinibas Pradhan Constructions,98.0,0.0,98.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Rajputana Stainless,122.0,0.0,122.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Raajmarg Infra Investment Trust,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
+Innovision,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 18:36:08
