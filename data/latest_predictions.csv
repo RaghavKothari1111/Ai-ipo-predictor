@@ -1,25 +1,25 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-Tranway Technologies,81.0,33.70474615529364,108.30084438578785,0.0,271.13,AI_Model,2026-03-04 12:25:17
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-Yaap Digital,145.0,-2.689273884417838,141.10055286759413,0.0,8.29,AI_Model,2026-03-04 12:25:17
-Omnitech Engineering,227.0,4.405286343612335,237.0,10.0,3.0,AI_Model,2026-03-04 12:25:17
-Striders Impex,72.0,-5.847857771624243,67.78954240443055,0.0,2.03,AI_Model,2026-03-04 12:25:17
-Acetech E-Commerce,112.0,-6.851021002997672,104.3268564766426,0.0,1.0,AI_Model,2026-03-04 12:25:17
-SEDEMAC Mechatronics,1352.0,1.257396449704142,1369.0,17.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-Elfin Agro India,47.0,0.0,47.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-Srinibas Pradhan Constructions,98.0,0.0,98.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
-Rajputana Stainless,122.0,0.0,122.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 12:25:17
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+Tranway Technologies,81.0,33.70474615529364,108.30084438578785,0.0,271.13,AI_Model,2026-03-04 14:15:40
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+Yaap Digital,145.0,-2.4503191113246725,141.44703728857922,0.0,8.29,AI_Model,2026-03-04 14:15:40
+Omnitech Engineering,227.0,4.405286343612335,237.0,10.0,3.0,AI_Model,2026-03-04 14:15:40
+Striders Impex,72.0,-5.513230809388022,68.03047381724062,0.0,2.03,AI_Model,2026-03-04 14:15:40
+Acetech E-Commerce,112.0,-6.149212062966927,105.11288248947704,0.0,1.0,AI_Model,2026-03-04 14:15:40
+SEDEMAC Mechatronics,1352.0,1.1094674556213018,1367.0,15.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+Elfin Agro India,47.0,0.0,47.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+Srinibas Pradhan Constructions,98.0,0.0,98.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
+Rajputana Stainless,122.0,0.0,122.0,0.0,0.0,GMP_Sector_Logic,2026-03-04 14:15:40
