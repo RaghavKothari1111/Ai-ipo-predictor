@@ -1,27 +1,27 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Tranway Technologies,81.0,37.16125872695272,111.10061956883169,0.0,271.13,AI_Model,2026-03-10 12:26:50
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-SEDEMAC Mechatronics,1352.0,20.2090190217184,1625.2259371736327,85.0,8.46,AI_Model,2026-03-10 12:26:50
-Elfin Agro India,47.0,0.0,47.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Srinibas Pradhan Constructions,98.0,-3.029766480831547,95.03082884878509,0.0,1.13,AI_Model,2026-03-10 12:26:50
-Rajputana Stainless,122.0,1.2295081967213115,123.5,1.5,0.99,AI_Model,2026-03-10 12:26:50
-Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Raajmarg Infra Investment Trust,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Innovision,548.0,0.0,548.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Apsis Aerocom,110.0,5.454545454545454,116.0,6.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
-Novus Loyalty,146.0,0.0,146.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 12:26:50
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Tranway Technologies,81.0,37.16125872695272,111.10061956883169,0.0,271.13,AI_Model,2026-03-10 14:21:24
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+SEDEMAC Mechatronics,1352.0,20.2090190217184,1625.2259371736327,85.0,8.46,AI_Model,2026-03-10 14:21:24
+Elfin Agro India,47.0,0.0,47.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Srinibas Pradhan Constructions,98.0,-3.029766480831547,95.03082884878509,0.0,1.13,AI_Model,2026-03-10 14:21:24
+Rajputana Stainless,122.0,1.2295081967213115,123.5,1.5,0.99,AI_Model,2026-03-10 14:21:24
+Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Raajmarg Infra Investment Trust,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Innovision,548.0,-14.878140915678792,466.4677877820802,0.0,1.0,AI_Model,2026-03-10 14:21:24
+Apsis Aerocom,110.0,6.363636363636363,117.0,7.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
+Novus Loyalty,146.0,0.0,146.0,0.0,0.0,GMP_Sector_Logic,2026-03-10 14:21:24
