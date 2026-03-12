@@ -1,26 +1,26 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-Tranway Technologies,81.0,34.737765423189984,109.13758999278389,0.0,271.13,AI_Model,2026-03-13 02:10:35
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-Srinibas Pradhan Constructions,98.0,-1.956015569463471,96.0831047419258,0.0,1.13,AI_Model,2026-03-13 02:10:35
-Rajputana Stainless,122.0,2.459016393442623,125.0,3.0,2.51,AI_Model,2026-03-13 02:10:35
-Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-Raajmarg Infra Investment Trust,0.0,-8.39032108488301,0.0,0.0,0.2,AI_Model,2026-03-13 02:10:35
-Innovision,519.0,-10.722645018660337,463.34947235315286,0.0,1.03,AI_Model,2026-03-13 02:10:35
-Apsis Aerocom,110.0,16.363636363636363,128.0,18.0,0.01,AI_Model,2026-03-13 02:10:35
-Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-Novus Loyalty,146.0,0.0,146.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
-GSP Crop Science,320.0,0.0,320.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 02:10:35
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+Tranway Technologies,81.0,34.737765423189984,109.13758999278389,0.0,271.13,AI_Model,2026-03-13 04:01:14
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+Srinibas Pradhan Constructions,98.0,-1.956015569463471,96.0831047419258,0.0,1.13,AI_Model,2026-03-13 04:01:14
+Rajputana Stainless,122.0,2.459016393442623,125.0,3.0,2.51,AI_Model,2026-03-13 04:01:14
+Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+Raajmarg Infra Investment Trust,0.0,-8.39032108488301,0.0,0.0,0.2,AI_Model,2026-03-13 04:01:14
+Innovision,519.0,-10.722645018660337,463.34947235315286,0.0,1.03,AI_Model,2026-03-13 04:01:14
+Apsis Aerocom,110.0,16.363636363636363,128.0,18.0,0.01,AI_Model,2026-03-13 04:01:14
+Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+Novus Loyalty,146.0,0.0,146.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
+GSP Crop Science,320.0,0.0,320.0,0.0,0.0,GMP_Sector_Logic,2026-03-13 04:01:14
