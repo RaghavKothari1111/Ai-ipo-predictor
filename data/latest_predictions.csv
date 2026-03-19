@@ -1,30 +1,30 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Tranway Technologies,81.0,36.37707229047523,110.46542855528493,0.0,271.13,AI_Model,2026-03-19 20:23:20
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Raajmarg Infra Investment Trust,0.0,2.962181888389649,0.0,3.5,19.14,AI_Model,2026-03-19 20:23:20
-Innovision,519.0,29.814983035600275,673.7397619547654,88.0,14.3,AI_Model,2026-03-19 20:23:20
-Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Novus Loyalty,146.0,-11.310314765641904,129.48694044216282,0.0,0.89,AI_Model,2026-03-19 20:23:20
-GSP Crop Science,320.0,-0.3370706050133663,318.9213740639572,0.0,2.66,AI_Model,2026-03-19 20:23:20
-Tipco Engineering,227.0,-5.4825957754566685,214.55450758971335,0.0,3.0,AI_Model,2026-03-19 20:23:20
-Central Mine Planning,172.0,2.3255813953488373,176.0,4.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Amir Chand Jagdish Kumar,212.0,2.8301886792452833,218.0,6.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Speciality Medicines,124.0,0.0,124.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Sai Parenteral's,392.0,0.0,392.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Powerica,395.0,2.0253164556962027,403.0,8.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
-Highness Microelectronics,120.0,0.0,120.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 20:23:20
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Tranway Technologies,81.0,36.37707229047523,110.46542855528493,0.0,271.13,AI_Model,2026-03-19 22:31:49
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Raajmarg Infra Investment Trust,0.0,2.962181888389649,0.0,3.5,19.14,AI_Model,2026-03-19 22:31:49
+Innovision,519.0,29.814983035600275,673.7397619547654,88.0,14.3,AI_Model,2026-03-19 22:31:49
+Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Novus Loyalty,146.0,-11.310314765641904,129.48694044216282,0.0,0.89,AI_Model,2026-03-19 22:31:49
+GSP Crop Science,320.0,-0.3370706050133663,318.9213740639572,0.0,2.66,AI_Model,2026-03-19 22:31:49
+Tipco Engineering,227.0,-5.4825957754566685,214.55450758971335,0.0,3.0,AI_Model,2026-03-19 22:31:49
+Central Mine Planning,172.0,2.3255813953488373,176.0,4.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Amir Chand Jagdish Kumar,212.0,2.8301886792452833,218.0,6.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Speciality Medicines,124.0,0.0,124.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Sai Parenteral's,392.0,0.0,392.0,0.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Powerica,395.0,2.0253164556962027,403.0,8.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
+Highness Microelectronics,120.0,3.3333333333333335,124.0,4.0,0.0,GMP_Sector_Logic,2026-03-19 22:31:49
