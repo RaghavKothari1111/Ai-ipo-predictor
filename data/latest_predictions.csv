@@ -1,28 +1,28 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-Tranway Technologies,81.0,34.088998442038566,108.61208873805124,0.0,271.13,AI_Model,2026-03-27 11:13:57
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
-Tipco Engineering,89.0,-2.92804539076997,86.39403960221472,0.0,3.2,AI_Model,2026-03-27 11:13:57
-Central Mine Planning,172.0,4.651162790697675,180.0,8.0,3.48,AI_Model,2026-03-27 11:13:57
-Amir Chand Jagdish Kumar,212.0,3.30188679245283,219.0,7.0,0.95,AI_Model,2026-03-27 11:13:57
-Speciality Medicines,124.0,13.823945113654087,141.14169194093105,0.0,96.24,AI_Model,2026-03-27 11:13:57
-Sai Parenteral's,392.0,-3.4439879240250253,378.4995673378219,0.0,0.6,AI_Model,2026-03-27 11:13:57
-Powerica,395.0,0.25316455696202533,396.0,1.0,0.02,AI_Model,2026-03-27 11:13:57
-Highness Microelectronics,120.0,25.0,150.0,30.0,0.04,AI_Model,2026-03-27 11:13:57
-Vivid Electromech,555.0,-6.04585338314739,521.4455137235319,0.0,1.26,AI_Model,2026-03-27 11:13:57
-Emiac Technologies,98.0,10.204081632653061,108.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 11:13:57
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+Tranway Technologies,81.0,34.088998442038566,108.61208873805124,0.0,271.13,AI_Model,2026-03-27 12:44:39
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
+Tipco Engineering,89.0,-2.627024982606704,86.66194776548004,0.0,3.2,AI_Model,2026-03-27 12:44:39
+Central Mine Planning,172.0,4.651162790697675,180.0,8.0,3.48,AI_Model,2026-03-27 12:44:39
+Amir Chand Jagdish Kumar,212.0,3.0660377358490565,218.5,6.5,0.95,AI_Model,2026-03-27 12:44:39
+Speciality Medicines,124.0,13.844863481001026,141.16763071644127,0.0,96.24,AI_Model,2026-03-27 12:44:39
+Sai Parenteral's,392.0,0.14814527931646687,392.5807294949205,0.0,0.6,AI_Model,2026-03-27 12:44:39
+Powerica,395.0,0.25316455696202533,396.0,1.0,0.02,AI_Model,2026-03-27 12:44:39
+Highness Microelectronics,120.0,20.833333333333336,145.0,25.0,4.13,AI_Model,2026-03-27 12:44:39
+Vivid Electromech,555.0,-5.962179913759635,521.909901478634,0.0,1.26,AI_Model,2026-03-27 12:44:39
+Emiac Technologies,98.0,10.204081632653061,108.0,0.0,0.0,GMP_Sector_Logic,2026-03-27 12:44:39
