@@ -1,24 +1,24 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-Tranway Technologies,81.0,36.33535954741633,110.43164123340723,0.0,271.13,AI_Model,2026-04-22 02:27:58
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 02:27:58
-Propshare Celestia,0.0,5.365749969666038,0.0,0.0,0.17,AI_Model,2026-04-22 02:27:58
-Citius Transnet InvIT,0.0,3.9263221934836117,0.0,3.25,0.3,AI_Model,2026-04-22 02:27:58
-Mehul Telecom,98.0,3.061224489795918,101.0,3.0,32.5,AI_Model,2026-04-22 02:27:58
-Leapfrog Engineering,89.0,0.9321034158872119,89.82957204013961,0.0,3.2,AI_Model,2026-04-22 02:27:58
-Adisoft Technologies,98.0,6.171245354201034,104.04782044711702,0.0,1.02,AI_Model,2026-04-22 02:27:58
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+Tranway Technologies,81.0,36.33535954741633,110.43164123340723,0.0,271.13,AI_Model,2026-04-22 04:11:49
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-22 04:11:49
+Propshare Celestia,0.0,5.365749969666038,0.0,0.0,0.17,AI_Model,2026-04-22 04:11:49
+Citius Transnet InvIT,0.0,3.9263221934836117,0.0,3.25,0.3,AI_Model,2026-04-22 04:11:49
+Mehul Telecom,98.0,3.061224489795918,101.0,3.0,32.5,AI_Model,2026-04-22 04:11:49
+Leapfrog Engineering,89.0,0.9321034158872119,89.82957204013961,0.0,3.2,AI_Model,2026-04-22 04:11:49
+Adisoft Technologies,98.0,6.171245354201034,104.04782044711702,0.0,1.02,AI_Model,2026-04-22 04:11:49
