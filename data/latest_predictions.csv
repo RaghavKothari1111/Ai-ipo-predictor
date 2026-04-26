@@ -1,25 +1,26 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-Tranway Technologies,81.0,34.56294211940425,108.99598311671744,0.0,271.13,AI_Model,2026-04-26 22:21:22
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-Citius Transnet InvIT,0.0,-2.032364538954119,0.0,3.5,0.3,AI_Model,2026-04-26 22:21:22
-Leapfrog Engineering,89.0,0.9955199290277983,89.88601273683474,0.0,3.2,AI_Model,2026-04-26 22:21:22
-Adisoft Technologies,172.0,9.593023255813954,188.5,16.5,3.67,AI_Model,2026-04-26 22:21:22
-Amba Auto Sales and Services,135.0,0.0,135.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
-Citius Transnet InvITIPOCAllotted,0.0,-2.032364538954119,0.0,3.5,0.3,AI_Model,2026-04-26 22:21:22
-Value 360 Communications,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-26 22:21:22
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+Tranway Technologies,81.0,34.56294211940425,108.99598311671744,0.0,271.13,AI_Model,2026-04-27 00:31:39
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+Citius Transnet InvIT,0.0,-2.032364538954119,0.0,3.5,0.3,AI_Model,2026-04-27 00:31:39
+Leapfrog Engineering,89.0,0.9955199290277983,89.88601273683474,0.0,3.2,AI_Model,2026-04-27 00:31:39
+Adisoft Technologies,172.0,9.593023255813954,188.5,16.5,3.67,AI_Model,2026-04-27 00:31:39
+Amba Auto Sales and Services,135.0,0.0,135.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+Citius Transnet InvITIPOCAllotted,0.0,-2.032364538954119,0.0,3.5,0.3,AI_Model,2026-04-27 00:31:39
+Value 360 Communications,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 00:31:39
+OnEMI TechnologyIPOU,98.0,3.380326528997585,101.31271999841763,0.0,1.02,AI_Model,2026-04-27 00:31:39
