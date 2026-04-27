@@ -1,26 +1,26 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-Tranway Technologies,81.0,34.56294211940425,108.99598311671744,0.0,271.13,AI_Model,2026-04-27 12:01:15
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-Citius Transnet InvIT,0.0,-2.032364538954119,0.0,3.5,0.3,AI_Model,2026-04-27 12:01:15
-Leapfrog Engineering,89.0,1.2747034962531967,90.13448611166535,0.0,3.2,AI_Model,2026-04-27 12:01:15
-Adisoft Technologies,172.0,9.593023255813954,188.5,16.5,3.67,AI_Model,2026-04-27 12:01:15
-Amba Auto Sales and Services,135.0,0.0,135.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-Citius Transnet InvITIPOCAllotted,0.0,-1.144011594540578,0.0,3.5,0.3,AI_Model,2026-04-27 12:01:15
-Value 360 Communications,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 12:01:15
-OnEMI TechnologyIPOU,98.0,5.3210169317201474,103.21459659308576,0.0,1.02,AI_Model,2026-04-27 12:01:15
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+Tranway Technologies,81.0,34.56294211940425,108.99598311671744,0.0,271.13,AI_Model,2026-04-27 15:51:16
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+Citius Transnet InvIT,0.0,-2.032364538954119,0.0,3.5,0.3,AI_Model,2026-04-27 15:51:16
+Leapfrog Engineering,89.0,1.3694765341105875,90.21883411535843,0.0,3.2,AI_Model,2026-04-27 15:51:16
+Adisoft Technologies,172.0,10.552652408513955,190.150562142644,12.0,94.66,AI_Model,2026-04-27 15:51:16
+Amba Auto Sales and Services,135.0,0.0,135.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+Citius Transnet InvITIPOCAllotted,100.0,3.5000000000000004,103.5,3.5,0.3,AI_Model,2026-04-27 15:51:16
+Value 360 Communications,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-04-27 15:51:16
+OnEMI TechnologyIPOU,98.0,5.373726291326059,103.26625176549955,0.0,1.02,AI_Model,2026-04-27 15:51:16
