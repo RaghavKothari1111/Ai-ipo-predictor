@@ -1,29 +1,29 @@
 Name,Issue_Price,Predicted_Gain_Percent,Predicted_Final_Price,Current_GMP,Sub_QIB,Method,Prediction_Date
-Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-Tranway Technologies,81.0,37.183332553731496,111.1184993685225,0.0,271.13,AI_Model,2026-05-03 18:50:03
-HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-Citius Transnet InvIT,0.0,-4.301226681680929,0.0,3.5,0.3,AI_Model,2026-05-03 18:50:03
-Leapfrog Engineering,89.0,0.8800429798315718,89.7832382520501,0.0,3.2,AI_Model,2026-05-03 18:50:03
-Amba Auto Sales and Services,135.0,1.1736743358129926,136.58446035334754,0.0,1.75,AI_Model,2026-05-03 18:50:03
-Citius Transnet InvITIPOCAllotted,0.0,4.382217915912346,0.0,3.5,23.21,AI_Model,2026-05-03 18:50:03
-Value 360 Communications,98.0,0.0,98.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-OnEMI TechnologyIPOU,98.0,4.049725390616129,101.9687308828038,4.5,1.02,AI_Model,2026-05-03 18:50:03
-Recode Studios,158.0,28.48101265822785,203.0,45.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
-Citius Transnet InvITIPOLT,100.0,4.248177099585815,104.24817709958583,3.5,23.21,AI_Model,2026-05-03 18:50:03
-OnEMI TechnologyIPOO,171.0,2.3391812865497075,175.0,4.0,0.69,AI_Model,2026-05-03 18:50:03
-Bagmane REITIPOU,0.0,0.0,4.0,4.0,0.0,GMP_Sector_Logic,2026-05-03 18:50:03
+Bonlon Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+Billwin Industries,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+Cospower Engineering,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+SM Auto Stamping,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+ICL Organic Dairy Products,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+Chandra Bhagat Pharma,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+Janus,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+Madhav Copper,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+Tranway Technologies,81.0,37.183332553731496,111.1184993685225,0.0,271.13,AI_Model,2026-05-03 20:22:31
+HindPrakash Industries,515.0,0.0,515.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+Gian Life Care,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+Valencia Nutrition,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+Anuroop Packaging,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+Sona Hi Sona Jewellers,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+NFP Sampoorna Foods,55.0,0.0,55.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+Travelstack Tech,0.0,0.0,10.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+Skyways Air,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+Unknown,0.0,0.0,0.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+Citius Transnet InvIT,0.0,-4.301226681680929,0.0,3.5,0.3,AI_Model,2026-05-03 20:22:31
+Leapfrog Engineering,89.0,0.8800429798315718,89.7832382520501,0.0,3.2,AI_Model,2026-05-03 20:22:31
+Amba Auto Sales and Services,135.0,1.1736743358129926,136.58446035334754,0.0,1.75,AI_Model,2026-05-03 20:22:31
+Citius Transnet InvITIPOCAllotted,0.0,4.382217915912346,0.0,3.5,23.21,AI_Model,2026-05-03 20:22:31
+Value 360 Communications,98.0,0.0,98.0,0.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+OnEMI TechnologyIPOU,98.0,4.049725390616129,101.9687308828038,4.5,1.02,AI_Model,2026-05-03 20:22:31
+Recode Studios,158.0,28.48101265822785,203.0,45.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
+Citius Transnet InvITIPOLT,100.0,4.248177099585815,104.24817709958583,3.5,23.21,AI_Model,2026-05-03 20:22:31
+OnEMI TechnologyIPOO,171.0,2.3391812865497075,175.0,4.0,0.69,AI_Model,2026-05-03 20:22:31
+Bagmane REITIPOU,0.0,0.0,4.0,4.0,0.0,GMP_Sector_Logic,2026-05-03 20:22:31
